@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>State PPP Choropleth</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <!-- Marker Cluster CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/L.Control.Layers.Tree.css">
+    <link rel="stylesheet" type="text/css" href="static/css/leaflet-sidebar.min.css" />
+    <!-- FontAwesome -->
+    <link rel="shortcut icon" href="#"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Load Esri Leaflet Geocoder from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@3.1.2/dist/esri-leaflet-geocoder.css"
+    integrity="sha512-IM3Hs+feyi40yZhDH6kV8vQMg4Fh20s9OzInIIAc4nx7aMYMfo+IenRUekoYsHZqGkREUgx0VvlEsgm7nCDW9g=="
+    crossorigin="">
+  
+
+  </head>
+  <body>
+
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+
+      <!-- nav tabs -->
+      <div class="leaflet-sidebar-tabs">
+          <!-- top aligned tabs -->
+          <ul role="tablist">
+              <li><a href="#info" role="tab"><i class="fa fa-bars active"></i></a></li>
+              <li><a href="#controls" role="tab"><i class="fa fa-map-location-dot"></i></a></li>
+              <li><a href="#flask-api" role="tab"><i class="fa fa-gears"></i></a></li>
+          </ul>
+
+          <!-- bottom aligned tabs -->
+          <ul role="tablist">
+              <li><a href="https://github.com/nickpeihl/leaflet-sidebar-v2"><i class="fa fa-github"></i></a></li>
+          </ul>
+      </div>
+
+      <!-- panel content -->
+      <div class="leaflet-sidebar-content">
+          <div class="leaflet-sidebar-pane" id="info">
+              <h1 class="leaflet-sidebar-header">
+                  PPP Loan Data Map
+                  <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+              </h1>
+
+              <p>A responsive sidebar for the mapping library <a href="https://leafletjs.com/">Leaflet</a>.</p>
+              <p>Compatible with version 0.7 and 1.x (tested up to 1.6.0)</p>
+              <p><b>Select the other panes for a showcase of each feature.</b></p>
+
+              <h2>More examples</h2>
+              <ul>
+                  <li><a href="./position-right.html">Right aligned</a></li>
+                  <li><a href="./halfheight.html">The sidebar adapts to map container size</a></li>
+                  <li><a href="./leaflet-latest.html">Proof that it works with the latest leaflet version (if not, please report it!)</a></li>
+                  <li><a href="./leaflet-0.7.html">Proof that it works with leaflet 0.7</a></li>
+              </ul>
+
+              <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="leaflet-sidebar-pane" id="flask-api">
+            <h1 class="leaflet-sidebar-header">
+                JS API
+                <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+            </h1>
+            <p>
+              <button id="mailen" >enable mails panel</button>
+              <button id="maildis" >disable mails panel</button>
+            </p>
+            <p>
+              <button id ="user">add user</button> <br><br>
+            </p>
+            <p> {Observes Credentials after User Auth}
+              <button id="pointen" name="within"> Enable Points Request API</button> <br><br>
+              <button id="choroen" name="within"> Enable Choropleth Request API</button>
+            </p>
+        </div>
+  
+    <div class="leaflet-sidebar-pane" id="points">
+      <h1 class="leaflet-sidebar-header">Points<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+      <h3>Request API for Available Data Instances</h3>
+      <h4>Markers by State:</h4>
+      <input type = "checkbox" id = "checkbox3" name="points" class ="checkbox-round" value = "STATES_PTS_51"/> <label for="checkbox3" id="label">Virginia (avail)</label> <br>
+      <input type = "checkbox" id = "checkbox4" name="points" class ="checkbox-round" value = "STATES_PTS_24"/> <label for="checkbox4" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "checkbox5" name="points" class ="checkbox-round" value = "STATES_PTS_17"/> <label for="checkbox5" id="label">Illinois (avail)</label> <br>
+      <input type = "checkbox" id = "checkbox6" name="points" class ="checkbox-round" value = "STATES_PTS_48"/> <label for="checkbox6" id="label">Texas (avail)</label> <br><br>
+      <input type = "button" id = "mybutton5" value = "Request" /> <br><br>
+      <label for="states">Zoom to State:</label>
+      <select name="dropdown" id="states" value="Select State">
+        <option value="40.6331,-89.3985">Illinois</option>
+        <option value="39.0458,-76.6413">Maryland</option>
+        <option value="37.4316,-78.6569">Virginia</option>
+        <option value="31.1696,-99.6836">Texas</option>
+      </select>
+      <!-- https://latitudeandlongitude.org/ -->
+    </div>
+    <div class="leaflet-sidebar-pane" id="choro">
+      <h1 class="leaflet-sidebar-header">Choropleth<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+      <h3>Request API for Available Data Instances</h3>
+            
+      <h4>County Choropleth Request by State:</h4>
+      <input type = "checkbox" id = "51" name="county" class ="checkbox-round" value="STATES_PTS_51" file="CT_51"/> <label for="51" id="label">Virginia (avail)</label> <br>
+      <input type = "checkbox" id = "24" name="county" class ="checkbox-round" value="STATES_PTS_24" file="CT_24"/> <label for="24" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "17" name="county" class ="checkbox-round" value="STATES_PTS_17" file="CT_17"/> <label for="17" id="label">Illinois (avail)</label> <br>
+      <input type = "checkbox" id = "48" name="county" class ="checkbox-round" value="STATES_PTS_48" file="CT_48"/> <label for="48" id="label">Texas (avail)</label> <br> <br>
+      <input type = "button" id = "mybutton" value = "CountyData" /> <br>
+      <!-- <b>Enable Marker Display for County on Click:</b> <br> -->
+  
+      <h4>Block Group Choropleth Request by State:</h4>
+      <input type = "checkbox" id = "51bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_51" file="/states/51blockgroup.json" /> <label for="51bg" id="label">Virginia (avail)</label> <br>
+      <input type = "checkbox" id = "24bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_24" file="/states/24blockgroup.json" /> <label for="24bg" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "17bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_17" file="/states/17blockgroup.json" /> <label for="17bg" id="label">Illinois (avail)</label> <br>
+      <input type = "checkbox" id = "48bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_48" file="/states/48blockgroup.json" /> <label for="48bg" id="label">Texas (avail)</label> <br> <br>
+      <input type = "button" id = "mybutton1" value = "BlockGroupData" /> <br> 
+  
+      <h4>Block Choropleth Request by State:</h4>
+      <input type = "checkbox" id = "51b" name="block" class ="checkbox-round" value="STATES_PTS_51" file="/states/51block.json" /> <label for="51b" id="label">Virginia (avail)</label> <br>
+      <input type = "checkbox" id = "24b" name="block" class ="checkbox-round" value="STATES_PTS_24" file="/states/24block.json" /> <label for="24b" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "17b" name="block" class ="checkbox-round" value="STATES_PTS_17" file="/states/17block.json" /> <label for="17b" id="label">Illinois (avail)</label> <br> 
+      <input type = "checkbox" id = "48b" name="block" class ="checkbox-round" value="STATES_PTS_48" file="/states/48block.json" /> <label for="48b" id="label">Texas (avail)</label> <br> <br>
+      <input type = "button" id = "mybutton2" value = "BlockData" /> <br> <br>
+
+      <b>Enable Marker Display on Click: (when active)</b> <br>
+      <input type = "checkbox" id = "checkbox1" name="withingroup" value = "PointsWithinCounty" /> PointsWithin County <br>
+      <input type = "checkbox" id = "checkbox2" name="withingroup" value = "PointsWithinBlockGroup" /> PointsWithin BlockGroup <br>
+      <input type = "checkbox" id = "checkbox3" name="withingroup" value = "PointsWithinBlock" /> PointsWithin Block <br> <br> 
+
+      <b>Refreshes Points Displayed for Choropleth Layers:</b> <br>
+      <input type = "button" id = "mybutton4" value = "RefreshPointsWithin" /> <br><br>
+
+      <label for="states">Zoom to State:</label>
+      <select name="dropdown" id="states">
+        <option value="40.6331,-89.3985">Illinois</option>
+        <option value="39.0458,-76.6413">Maryland</option>
+        <option value="37.4316,-78.6569">Virginia</option>
+        <option value="31.1696,-99.6836">Texas</option>
+      </select>
+    </div>
+    
+    <div class="leaflet-sidebar-pane" id="messages">
+      <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+  </div>
+  </div>
+  </div>
+  
+    <!-- The div where we will inject our map -->
+    <div id="map"></div>
+
+
+    <!-- Leaflet JS-->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@3.0.7/dist/esri-leaflet.js"
+    integrity="sha512-ciMHuVIB6ijbjTyEdmy1lfLtBwt0tEHZGhKVXDzW7v7hXOe+Fo3UA1zfydjCLZ0/vLacHkwSARXB5DmtNaoL/g=="
+    crossorigin=""></script>
+      <!-- Load Esri Leaflet Geocoder from CDN -->
+      <script src="https://unpkg.com/esri-leaflet-geocoder@3.1.2/dist/esri-leaflet-geocoder.js"
+      integrity="sha512-8bfbGLq2FUlH5HesCEDH9UiuUCnBq0A84yYv+LkUNPk/C2z81PsX2Q/U2Lg6l/QRuKiT3y2De2fy9ZPLqjMVxQ=="
+      crossorigin=""></script>
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- turf JavaScript -->
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <!-- Default Passive Event Handler-->
+    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+    <!-- Leaflet Marker Cluster JS-->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script> 
+    <!-- AJAX jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Leaflet AJAX -->
+    <script type="text/javascript" src="static/js/leaflet.ajax.min.js"></script>
+    <!-- Leaflet-Choropleth JavaScript -->
+    <script type="text/javascript" src="static/js/choropleth.js"></script>
+    <!-- Leaflet Control Layers Tree JavaScript -->
+    <script type="text/javascript" src="static/js/L.Control.Layers.Tree.js"></script>
+    <!-- Leaflet-Sidebar JavaScript -->
+    <script type="text/javascript" src="static/js/leaflet-sidebar.min.js"></script>
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/logic_s3.js"></script>
+
+  </body>
+</html>

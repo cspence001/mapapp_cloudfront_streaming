@@ -1,0 +1,154 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+.checkbox-round {
+  width: 1.0em;
+  height: 1.0em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid rgba(0,0,0,.2);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color:#0074d9;
+}
+
+/* CSS from the Leaflet-Choropleth documentation */
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+.legend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.legend .max {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
+.inputs {
+  padding-bottom: 2em;
+}
+
+.ui-select {
+  background:#fff;
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:100;
+  padding:10px;
+  border-radius:3px;
+  }
+
+/* CSS from the Leaflet-Choropleth documentation */
+.blocklegend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.blocklegend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.blocklegend li {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+}
+
+.blocklegend .min {
+  float: left;
+  padding-bottom: 5px;
+}
+
+.blocklegend .max {
+  float: right;
+}
+
+.filter-ui {
+  background:#fff;
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:100;
+  padding:10px;
+  border-radius:3px;
+  }
+
+.radiuslegend{
+  line-height: 19px;
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+
+.radiuslegend i {
+  width: 15px;
+  height: 15px;
+  float: right;
+  opacity: 0.7;
+  }
+
+.circle
+{
+float: left;
+border: 1px solid #DEE1E4;
+margin-top: 2px;
+}
