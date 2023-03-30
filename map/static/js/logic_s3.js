@@ -1,4 +1,4 @@
-cf = "/datava"
+cf = "STATES_PTS_51"
 d3.json(cf, function(data){
     createFeatures(data.features);
   })
@@ -3700,9 +3700,9 @@ $('input[type="checkbox"]').on('change', function() {
 // });
 //Change to react to layer tree selections 
 //through remote object pipe streaming
-L.DomEvent.on(L.DomUtil.get('onlysel'), 'click', function() {
-  lay.collapseTree(true).expandSelected(true);
-});
+// L.DomEvent.on(L.DomUtil.get('onlysel'), 'click', function() {
+//   lay.collapseTree(true).expandSelected(true);
+// });
 $("#mybutton5").click(function (event) { 
   if ($("input[name='points']:checked")){
     // ptsData = socket.emit('my event', {data: $("input[name='points']:checked").val()})
