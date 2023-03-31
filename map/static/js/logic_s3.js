@@ -670,7 +670,7 @@ d3.json(cf, function(data){
                     collapsed: true,
                     selectAllCheckbox: true,
                     children: [
-                        { label: 'PPP', layer: PPPgroup },
+                        { label: '<label for="PPP', layer: PPPgroup },
                         { label: 'PPS', layer: PPSgroup},
                     ]},
                   ]}
@@ -691,7 +691,7 @@ d3.json(cf, function(data){
           JR1group, JR2group, JR3group, JR4group, JR5group, JR6group, JR7group, JR8group,
           VAgroup, MDgroup, ILgroup, TXgroup]
       });
-  
+  s
       // myMap.on('click', function (){
       //   myMap.zoomIn();
       // })
@@ -723,7 +723,7 @@ d3.json(cf, function(data){
         const content = L.layerGroup().addTo(myMap);
         // filter selection
         myMap.on('overlayadd overlayremove', () => {
-       if (myMap.hasLayer(ind00ss00group)) { objSS['IND00SS00'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind00ss00group).on) { objSS['IND00SS00'].forEach(marker=> marker.addTo(content))
         }
        if (myMap.hasLayer(ind11ss11group)) { objSS['IND11SS11'].forEach(marker=> marker.addTo(content))
         }
