@@ -670,7 +670,7 @@ d3.json(cf, function(data){
                     collapsed: true,
                     selectAllCheckbox: true,
                     children: [
-                        { label: '<label for="PPP', layer: PPPgroup },
+                        { label: 'PPP', layer: PPPgroup },
                         { label: 'PPS', layer: PPSgroup},
                     ]},
                   ]}
@@ -691,7 +691,7 @@ d3.json(cf, function(data){
           JR1group, JR2group, JR3group, JR4group, JR5group, JR6group, JR7group, JR8group,
           VAgroup, MDgroup, ILgroup, TXgroup]
       });
-  s
+  
       // myMap.on('click', function (){
       //   myMap.zoomIn();
       // })
