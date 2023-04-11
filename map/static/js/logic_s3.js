@@ -2340,6 +2340,13 @@ var layerControl = L.control.layers.tree (baseMaps, overlaysTree, {
 })
 layerControl.addTo(myMap);
 
+var htmlObject = layerControl.getContainer().querySelectorAll('input');
+//var a = document.getElementById('divLayers');
+
+$(htmlObject).on("change", function(e) {
+  if ($(this).is(':checked'))
+    console.log($(this).siblings('span').text());
+});
 //adding LayerControl to SIDEBAR
 // var htmlObject = layerControl.getContainer();
 // var a = document.getElementById('layers');
@@ -2840,15 +2847,15 @@ $("#mybutton2").click(function (event) {
     function onEachFeature(feature, layer){
       layer.bindPopup("CountyID: " + feature.properties.FIPScounty + "<br>County: " + feature.properties.NAME + "<br>BlockGroupID: " + feature.properties.FIPSblockgroup + "<br>BlockGroup " + feature.properties.NAMELSAD + "<br>BlockID: " + feature.properties.FIPSblock + "<br>Block: " + feature.properties.NAME20+ "<br># of Loans: " + feature.properties.LoanNumber + "<br>Current Approval Amount $: " + feature.properties.CurrentApprovalAmount + "<br>Jobs Reported: " + feature.properties.JobsReported + "<br># of Lenders: " + feature.properties.ServicingLenderLocationID+ "<br>Estimated Lender Profit: " + feature.properties.Estimated_LenderProfit
       + "<br>Forgiveness Amount: " + feature.properties.ForgivenessAmount);
-      // layer.on("click", function (e){
-      //   pointsInBuffer = L.geoJSON(null, {
-      //     onEachFeature: function (feature, layer) { 
-      //       layer.bindPopup("Loan Recipient: " + feature.properties.BorrowerName + "<br>Borrower Address: " + feature.properties.full_add + "<br>Business Type: " + feature.properties.BusinessType + "<br><b>Loan Type</b>: " + feature.properties.ProcessingMethod + "<br>Date Approved: " + feature.properties.DateApproved + "<br>Current Approval Amount $: " + feature.properties.CurrentApprovalAmount + "<br>Jobs Reported #: " + feature.properties.JobsReported + "<br>Loan Forgiveness Amount: " + feature.properties.ForgivenessAmount + "<br>Loan Status: " + feature.properties.LoanStatus + "<br>Loan Status Date: " + feature.properties.LoanStatusDate + "<br>Servicing Lender: " + feature.properties.ServicingLenderName + "<br>Estimated Lender Profit: " + feature.properties.Estimated_LenderProfit + "<br>Industry: "+ feature.properties.Industry)
-      //     }
-      //   }).addTo(groupblock);
-      //   var ptswithin = turf.pointsWithinPolygon(myPts.toGeoJSON(), layer.toGeoJSON())
-      //   pointsInBuffer.addData(ptswithin);
-      // }) 
+      layer.on("click", function (e){
+        pointsInBuffer = L.geoJSON(null, {
+          onEachFeature: function (feature, layer) { 
+            layer.bindPopup("Loan Recipient: " + feature.properties.BorrowerName + "<br>Borrower Address: " + feature.properties.full_add + "<br>Business Type: " + feature.properties.BusinessType + "<br><b>Loan Type</b>: " + feature.properties.ProcessingMethod + "<br>Date Approved: " + feature.properties.DateApproved + "<br>Current Approval Amount $: " + feature.properties.CurrentApprovalAmount + "<br>Jobs Reported #: " + feature.properties.JobsReported + "<br>Loan Forgiveness Amount: " + feature.properties.ForgivenessAmount + "<br>Loan Status: " + feature.properties.LoanStatus + "<br>Loan Status Date: " + feature.properties.LoanStatusDate + "<br>Servicing Lender: " + feature.properties.ServicingLenderName + "<br>Estimated Lender Profit: " + feature.properties.Estimated_LenderProfit + "<br>Industry: "+ feature.properties.Industry)
+          }
+        }).addTo(groupblock);
+        var ptswithin = turf.pointsWithinPolygon(myPts.toGeoJSON(), layer.toGeoJSON())
+        pointsInBuffer.addData(ptswithin);
+      }) 
     }
   geojsonblock = L.choropleth(data, {
     valueProperty: "CurrentApprovalAmount",
@@ -3694,6 +3701,21 @@ let objBT = {
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
 });
+
+
+// Attach a change event handler to the checkboxes.
+// checkboxes.change(function() {
+//   enabledSettings = checkboxes
+//     .filter(":checked") // Filter out unchecked boxes.
+//     .map(function() { // Extract values using jQuery map.
+//       return this.value;
+//     }) 
+//     .get() // Get array.
+    
+//   console.log(enabledSettings);
+// });
+
+
 // var socket = io('https://d1faqcaxpyxvpg.cloudfront.net');
 // socket.on('connect', function() {
 //   socket.emit('my event', {data: 'I\'m connected!'});
