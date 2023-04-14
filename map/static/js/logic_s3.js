@@ -2333,27 +2333,26 @@ $("#user").click(function addUser() {
       pane: '<p>user ipsum dolor sit amet</p>',
   });
 })
-  
-        
+      
 var layerControl = L.control.layers.tree (baseMaps, overlaysTree, {
   collapsed: false
 })
 layerControl.addTo(myMap);
 
 var htmlObject = layerControl.getContainer().querySelectorAll('input');
-//var a = document.getElementById('divLayers');
-
 $(htmlObject).on("change", function(e) {
-  if ($(this).is(':checked'))
+  if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox:checked')) {
+    console.log($(this).siblings('span').text())
+    var ancestors = $(this).parents(".leaflet-layerstree-node");
+    var ancestor0= ancestors[0].children;
+    var children1=ancestor0[1].outerText;
+    console.log(children1) 
+}
+  else {
+    if ($(this).is(':checked'))
     console.log($(this).siblings('span').text());
-});
-//adding LayerControl to SIDEBAR
-// var htmlObject = layerControl.getContainer();
-// var a = document.getElementById('layers');
-// function setParent(el, newParent) {
-//   newParent.appendChild(el);
-// }
-// setParent(htmlObject, a);
+  }
+})
   
   // County Legends
   var legend = L.control({ position: "bottomleft" 
