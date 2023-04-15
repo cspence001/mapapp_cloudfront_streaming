@@ -2339,18 +2339,31 @@ var layerControl = L.control.layers.tree (baseMaps, overlaysTree, {
 })
 layerControl.addTo(myMap);
 
+//INDobj
 var htmlObject = layerControl.getContainer().querySelectorAll('input');
 $(htmlObject).on("change", function(e) {
-  if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox:checked')) {
-    console.log($(this).siblings('span').text())
-    var ancestors = $(this).parents(".leaflet-layerstree-node");
-    var ancestor0= ancestors[0].children;
-    var children1=ancestor0[1].outerText;
-    console.log(children1) 
-}
-  else {
-    if ($(this).is(':checked'))
-    console.log($(this).siblings('span').text());
+  if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
+    if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox:checked')) {
+      var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
+      NodeList.prototype.forEach = Array.prototype.forEach
+      ancestors.forEach(item =>
+        console.log(item.children[0].children[1].innerText));
+        //push parameters to websocket
+    } else {
+      console.log($(this).siblings('span').text())
+      var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
+      NodeList.prototype.forEach = Array.prototype.forEach
+      ancestors.forEach(item =>
+        console.log(item.children[0].children[1].innerText,"is unchecked"));
+    } //remove parameters from websocket
+  }
+  if ($(this).is('.leaflet-control-layers-selector')) {
+    if ($(this).is('.leaflet-control-layers-selector:checked')) {
+      console.log($(this).siblings('span').text());
+      //push parameter to websocket
+    } else {
+      console.log($(this).siblings('span').text(),"single selector unchecked")
+    } //remove parameter from websocket
   }
 })
   
