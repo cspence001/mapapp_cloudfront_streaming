@@ -2343,29 +2343,77 @@ layerControl.addTo(myMap);
 var htmlObject = layerControl.getContainer().querySelectorAll('input');
 $(htmlObject).on("change", function(e) {
   if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
+    let mainSel = ($(this).siblings('span').text()) //main selector
     if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox:checked')) {
+      // console.log($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) //AllInd label if nested
+      if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //if All Industry node
       var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
       NodeList.prototype.forEach = Array.prototype.forEach
       ancestors.forEach(item =>
-        console.log(item.children[0].children[1].innerText));
+        console.log(mainSel, item.children[0].children[1].innerText.slice(0,4))); //Utilities 2211 2212 2213 checked
         //push parameters to websocket
-    } else {
-      console.log($(this).siblings('span').text())
-      var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
-      NodeList.prototype.forEach = Array.prototype.forEach
-      ancestors.forEach(item =>
-        console.log(item.children[0].children[1].innerText,"is unchecked"));
+      }
+      if (!$(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //If All Other node checked
+        var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
+        NodeList.prototype.forEach = Array.prototype.forEach
+        ancestors.forEach(item =>
+          console.log(mainSel, item.children[0].children[1].innerText)); //Loan Range a,b,c,d,e
+      }
+    } else {//If All Ind unchecked
+        if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
+          var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
+          NodeList.prototype.forEach = Array.prototype.forEach
+          ancestors.forEach(item =>
+            console.log(mainSel, item.children[0].children[1].innerText.slice(0,4),"is unchecked")); //Utilities 2211 2212 2213 unchecked
+        } else { //If All Other unchecked
+          var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
+          NodeList.prototype.forEach = Array.prototype.forEach
+          ancestors.forEach(item =>
+            console.log(mainSel, item.children[0].children[1].innerText,"is unchecked")); //Loan Rnage a,b,c,d,e unchecked
+        }
     } //remove parameters from websocket
   }
-  if ($(this).is('.leaflet-control-layers-selector')) {
-    if ($(this).is('.leaflet-control-layers-selector:checked')) {
-      console.log($(this).siblings('span').text());
-      //push parameter to websocket
-    } else {
-      console.log($(this).siblings('span').text(),"single selector unchecked")
-    } //remove parameter from websocket
+  if ($(this).is('.leaflet-control-layers-selector')) { //if single selector
+    // let mainSel = ($(this).siblings('span').text()) //nested Industry label
+    // console.log($(this).parents('.leaflet-layerstree-node')[0]) //1st nested Industry branch, or Loan Range label, etc.
+    if ($(this).is('.leaflet-control-layers-selector:checked')) { //if checked single selector in Ind
+      if ($(this).parents('.leaflet-layerstree-node')[0]) {
+        let val = $(this).siblings('span').text().slice(0,4)
+        let isnum = /^\d+$/.test(val);
+        if (isnum == true){ //if digit, Industry checked
+          let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
+          console.log(mainSel, val); //Utilities 2211 checked
+        } else { //if Other, checked
+          if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
+            let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
+            console.log(mainSel, $(this).siblings('span').text()) //All Industry Utilities single selector checked || Loan Range a 150-350
+          } 
+          else {
+            console.log($(this).siblings('span').text(), "main label") //Loan Range Main Label
+          }
+        }
+      } 
+    } else {  //if unchecked single selector 
+      if ($(this).parents('.leaflet-layerstree-node')[0]){
+        if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {//main selector Label 
+          let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText);
+          let val = $(this).siblings('span').text().slice(0,4)
+          let isnum = /^\d+$/.test(val);
+          if (isnum == true){ //if digit, Industry unchecked
+            console.log(mainSel, val,"single selector unchecked"); //Utilities 2211 unchecked
+            } else { //if Other, unchecked
+              console.log(mainSel, $(this).siblings('span').text(), "single selector unchecked") //All Industry Utilities single selector unchecked || Loan Range a 150-350 uncheked
+            }
+          } 
+        else { //if single SelAll selector
+          console.log($(this).siblings('span').text(), "main single selector unchecked") //Loan Range main single selector unchecked
+        }
+      } 
+    } 
   }
 })
+//LRobj
+
   
   // County Legends
   var legend = L.control({ position: "bottomleft" 
