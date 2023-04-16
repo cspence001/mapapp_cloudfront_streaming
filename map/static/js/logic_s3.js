@@ -2339,7 +2339,8 @@ var layerControl = L.control.layers.tree (baseMaps, overlaysTree, {
 })
 layerControl.addTo(myMap);
 
-//INDobj
+inditems=[]
+//LabelSelectors
 var htmlObject = layerControl.getContainer().querySelectorAll('input');
 $(htmlObject).on("change", function(e) {
   if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
@@ -2348,10 +2349,12 @@ $(htmlObject).on("change", function(e) {
       if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //if All Industry node
       var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
       NodeList.prototype.forEach = Array.prototype.forEach
-      ancestors.forEach(item =>
-        console.log(mainSel, item.children[0].children[1].innerText.slice(0,4))); //Utilities 2211 2212 2213 checked
-        //push parameters to websocket
-      }
+      ancestors.forEach(item =>{
+        let inditem = item.children[0].children[1].innerText.slice(0,4)
+        inditems.push(inditem);
+        console.log(mainSel, inditem); //Utilities 2211 2212 2213 checked
+      }) //push parameters to websocket
+      }console.log(inditems)
       if (!$(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //If All Other node checked
         var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
         NodeList.prototype.forEach = Array.prototype.forEach
@@ -2362,8 +2365,14 @@ $(htmlObject).on("change", function(e) {
         if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
-          ancestors.forEach(item =>
-            console.log(mainSel, item.children[0].children[1].innerText.slice(0,4),"is unchecked")); //Utilities 2211 2212 2213 unchecked
+          ancestors.forEach(item =>{
+            let inditem = item.children[0].children[1].innerText.slice(0,4)
+            // inditems.filter(function(inditem){
+            //   return inditems;
+            // });
+            console.log(mainSel, inditem, "is unchecked");//Utilities 2211 2212 2213 unchecked
+            console.log(inditems)
+          }) //push parameters to websocket
         } else { //If All Other unchecked
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
@@ -2403,11 +2412,6 @@ $(htmlObject).on("change", function(e) {
               }
             }
           } 
-        else { //if single SelAll selector
-          if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox'))  {
-          console.log($(this).siblings('span').text(), "main single selector unchecked") //Loan Range main single selector unchecked
-          }
-        }
       } 
     } 
   }
