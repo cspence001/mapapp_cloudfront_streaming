@@ -2345,7 +2345,6 @@ $(htmlObject).on("change", function(e) {
   if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
     let mainSel = ($(this).siblings('span').text()) //main selector
     if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox:checked')) {
-      // console.log($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) //AllInd label if nested
       if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //if All Industry node
       var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
       NodeList.prototype.forEach = Array.prototype.forEach
@@ -2373,9 +2372,7 @@ $(htmlObject).on("change", function(e) {
         }
     } //remove parameters from websocket
   }
-  if ($(this).is('.leaflet-control-layers-selector')) { //if single selector
-    // let mainSel = ($(this).siblings('span').text()) //nested Industry label
-    // console.log($(this).parents('.leaflet-layerstree-node')[0]) //1st nested Industry branch, or Loan Range label, etc.
+  if ($(this).is('.leaflet-control-layers-selector')) { //if single selector checked
     if ($(this).is('.leaflet-control-layers-selector:checked')) { //if checked single selector in Ind
       if ($(this).parents('.leaflet-layerstree-node')[0]) {
         let val = $(this).siblings('span').text().slice(0,4)
@@ -2385,12 +2382,11 @@ $(htmlObject).on("change", function(e) {
           console.log(mainSel, val); //Utilities 2211 checked
         } else { //if Other, checked
           if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
+            if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
             let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
             console.log(mainSel, $(this).siblings('span').text()) //All Industry Utilities single selector checked || Loan Range a 150-350
+            }
           } 
-          else {
-            console.log($(this).siblings('span').text(), "main label") //Loan Range Main Label
-          }
         }
       } 
     } else {  //if unchecked single selector 
@@ -2402,18 +2398,20 @@ $(htmlObject).on("change", function(e) {
           if (isnum == true){ //if digit, Industry unchecked
             console.log(mainSel, val,"single selector unchecked"); //Utilities 2211 unchecked
             } else { //if Other, unchecked
-              console.log(mainSel, $(this).siblings('span').text(), "single selector unchecked") //All Industry Utilities single selector unchecked || Loan Range a 150-350 uncheked
+              if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
+                console.log(mainSel, $(this).siblings('span').text(), "single selector unchecked") //All Industry Utilities single selector unchecked || Loan Range a 150-350 uncheked
+              }
             }
           } 
         else { //if single SelAll selector
+          if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox'))  {
           console.log($(this).siblings('span').text(), "main single selector unchecked") //Loan Range main single selector unchecked
+          }
         }
       } 
     } 
   }
 })
-//LRobj
-
   
   // County Legends
   var legend = L.control({ position: "bottomleft" 
