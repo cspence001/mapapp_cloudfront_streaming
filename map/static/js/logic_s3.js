@@ -2339,8 +2339,14 @@ var layerControl = L.control.layers.tree (baseMaps, overlaysTree, {
 })
 layerControl.addTo(myMap);
 
-inditems=[]
+
+// inditems= new Array();
+// filtereditems= new Array();
 //LabelSelectors
+
+inditemsArray= [];
+updateVal= new Array();
+filtereditems= new Array();
 var htmlObject = layerControl.getContainer().querySelectorAll('input');
 $(htmlObject).on("change", function(e) {
   if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
@@ -2351,10 +2357,12 @@ $(htmlObject).on("change", function(e) {
       NodeList.prototype.forEach = Array.prototype.forEach
       ancestors.forEach(item =>{
         let inditem = item.children[0].children[1].innerText.slice(0,4)
-        inditems.push(inditem);
+        if (!inditemsArray.includes(inditem)) {
+        inditemsArray.push({'IND':inditem, 'stream':true});
         console.log(mainSel, inditem); //Utilities 2211 2212 2213 checked
+        } //++ if item included, stream --> false -->> true
       }) //push parameters to websocket
-      }console.log(inditems)
+      }console.log(inditemsArray, "added")
       if (!$(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //If All Other node checked
         var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
         NodeList.prototype.forEach = Array.prototype.forEach
@@ -2365,14 +2373,28 @@ $(htmlObject).on("change", function(e) {
         if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
-          ancestors.forEach(item =>{
-            let inditem = item.children[0].children[1].innerText.slice(0,4)
-            // inditems.filter(function(inditem){
-            //   return inditems;
-            // });
-            console.log(mainSel, inditem, "is unchecked");//Utilities 2211 2212 2213 unchecked
-            console.log(inditems)
-          }) //push parameters to websocket
+          ancestors.forEach(item => {
+            let filtereditem = item.children[0].children[1].innerText.slice(0,4)
+            if (!filtereditems.includes(filtereditem)) {
+            // filtereditems.push({'IND':filtereditem, 'stream':false})
+            filtereditems.push(filtereditem)
+            }
+          })
+          let IND = filtereditems;
+          var map = Object.create(null);
+          IND.forEach(function(value){
+            map[value] = true;
+          });
+          inditemsArray.forEach(function(entry){
+            if (map[entry.IND]) {
+              entry.stream= false;
+            }
+          });
+            console.log(IND, "removed")
+            console.log(inditemsArray, "new")
+            // let listContainingRemainingValues = inditems.filter(f => !IND.includes(f))
+            // console.log(mainSel, inditems, "is unchecked"); //Utilities 2211 2212 2213 unchecked
+           //push parameters to websocket
         } else { //If All Other unchecked
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
@@ -2380,7 +2402,7 @@ $(htmlObject).on("change", function(e) {
             console.log(mainSel, item.children[0].children[1].innerText,"is unchecked")); //Loan Rnage a,b,c,d,e unchecked
         }
     } //remove parameters from websocket
-  }
+  } //SINGLE SELECTORS
   if ($(this).is('.leaflet-control-layers-selector')) { //if single selector checked
     if ($(this).is('.leaflet-control-layers-selector:checked')) { //if checked single selector in Ind
       if ($(this).parents('.leaflet-layerstree-node')[0]) {
@@ -2388,6 +2410,7 @@ $(htmlObject).on("change", function(e) {
         let isnum = /^\d+$/.test(val);
         if (isnum == true){ //if digit, Industry checked
           let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
+          inditems.push(val)
           console.log(mainSel, val); //Utilities 2211 checked
         } else { //if Other, checked
           if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
