@@ -2344,11 +2344,15 @@ layerControl.addTo(myMap);
 // filtereditems= new Array();
 //LabelSelectors
 
-inditemsArray= [];
+inditemsArray= {
+  'IND':[],
+  'LR':[]
+};
 updateVal= new Array();
 filtereditems= new Array();
 var htmlObject = layerControl.getContainer().querySelectorAll('input');
 $(htmlObject).on("change", function(e) {
+  inditems = new Array();
   if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
     let mainSel = ($(this).siblings('span').text()) //main selector
     if ($(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox:checked')) {
@@ -2357,10 +2361,13 @@ $(htmlObject).on("change", function(e) {
       NodeList.prototype.forEach = Array.prototype.forEach
       ancestors.forEach(item =>{
         let inditem = item.children[0].children[1].innerText.slice(0,4)
-        if (!inditemsArray.includes(inditem)) {
-        inditemsArray.push({'IND':inditem, 'stream':true});
-        console.log(mainSel, inditem); //Utilities 2211 2212 2213 checked
-        } //++ if item included, stream --> false -->> true
+        let newobj = {inditem, 'stream':true}
+        var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+        if(existObj) {
+          existObj.stream = newobj.stream;
+        } else {
+          inditemsArray['IND'].push(newobj)
+        }console.log(mainSel, inditem);
       }) //push parameters to websocket
       }console.log(inditemsArray, "added")
       if (!$(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //If All Other node checked
@@ -2374,27 +2381,19 @@ $(htmlObject).on("change", function(e) {
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
           ancestors.forEach(item => {
-            let filtereditem = item.children[0].children[1].innerText.slice(0,4)
-            if (!filtereditems.includes(filtereditem)) {
-            // filtereditems.push({'IND':filtereditem, 'stream':false})
-            filtereditems.push(filtereditem)
+            let inditem = item.children[0].children[1].innerText.slice(0,4)
+            let newobj = {inditem, 'stream':false}
+            var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+            if(existObj) {
+              existObj.stream = newobj.stream;
+            } else {
+              inditemsArray['IND'].push(newobj)
             }
           })
-          let IND = filtereditems;
-          var map = Object.create(null);
-          IND.forEach(function(value){
-            map[value] = true;
-          });
-          inditemsArray.forEach(function(entry){
-            if (map[entry.IND]) {
-              entry.stream= false;
-            }
-          });
-            console.log(IND, "removed")
-            console.log(inditemsArray, "new")
-            // let listContainingRemainingValues = inditems.filter(f => !IND.includes(f))
-            // console.log(mainSel, inditems, "is unchecked"); //Utilities 2211 2212 2213 unchecked
-           //push parameters to websocket
+          console.log(inditemsArray, "new")
+          //let listContainingRemainingValues = inditems.filter(f => !IND.includes(f))
+          //console.log(mainSel, inditems, "is unchecked"); //Utilities 2211 2212 2213 unchecked
+          // ++ push parameters to websocket
         } else { //If All Other unchecked
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
@@ -2406,12 +2405,19 @@ $(htmlObject).on("change", function(e) {
   if ($(this).is('.leaflet-control-layers-selector')) { //if single selector checked
     if ($(this).is('.leaflet-control-layers-selector:checked')) { //if checked single selector in Ind
       if ($(this).parents('.leaflet-layerstree-node')[0]) {
-        let val = $(this).siblings('span').text().slice(0,4)
-        let isnum = /^\d+$/.test(val);
+        let inditem = $(this).siblings('span').text().slice(0,4)
+        let isnum = /^\d+$/.test(inditem);
         if (isnum == true){ //if digit, Industry checked
           let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
-          inditems.push(val)
-          console.log(mainSel, val); //Utilities 2211 checked
+          let newobj = {inditem, 'stream':true}
+          var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+          if(existObj) {
+            existObj.stream = newobj.stream;
+          } else {
+            inditemsArray['IND'].push(newobj)
+          }
+          console.log(mainSel, inditem, "single selector added"); //Utilities 2211 checked
+          console.log(inditemsArray, "added single")
         } else { //if Other, checked
           if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
             if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
@@ -2425,10 +2431,18 @@ $(htmlObject).on("change", function(e) {
       if ($(this).parents('.leaflet-layerstree-node')[0]){
         if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {//main selector Label 
           let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText);
-          let val = $(this).siblings('span').text().slice(0,4)
-          let isnum = /^\d+$/.test(val);
+          let inditem = $(this).siblings('span').text().slice(0,4)
+          let isnum = /^\d+$/.test(inditem);
           if (isnum == true){ //if digit, Industry unchecked
-            console.log(mainSel, val,"single selector unchecked"); //Utilities 2211 unchecked
+            let newobj = {inditem, 'stream':false}
+            var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+            if(existObj) {
+              existObj.stream = newobj.stream;
+            } else {
+              inditemsArray['IND'].push(newobj)
+            }
+            console.log(mainSel, inditem,"single selector removed"); //Utilities 2211 unchecked
+            console.log(inditemsArray, "removed single")
             } else { //if Other, unchecked
               if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
                 console.log(mainSel, $(this).siblings('span').text(), "single selector unchecked") //All Industry Utilities single selector unchecked || Loan Range a 150-350 uncheked
