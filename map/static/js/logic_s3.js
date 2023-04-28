@@ -2368,7 +2368,7 @@ $(htmlObject).on("change", function(e) {
         } else {
           itemsArray['IND'].push(newobj)
         }//console.log(mainSel, inditem);
-      }); console.log(itemsArray, "Industry MultiSel added") //push parameters to websocket 
+      }); console.log(itemsArray, mainSel, "MultiSel added") //push parameters to websocket 
       }
       if (!$(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //If All Other node checked
         var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
@@ -2399,7 +2399,7 @@ $(htmlObject).on("change", function(e) {
             } else {
               itemsArray['IND'].push(newobj)
             }
-          });console.log(itemsArray, "Ind MultiSel removed")
+          });console.log(itemsArray, mainSel, "Ind MultiSel removed")
           //let listContainingRemainingValues = inditems.filter(f => !IND.includes(f))
           //console.log(mainSel, inditems, "is unchecked"); //Utilities 2211 2212 2213 unchecked
           // ++ push parameters to websocket
@@ -2436,13 +2436,22 @@ $(htmlObject).on("change", function(e) {
           } else {
             itemsArray['IND'].push(newobj)
           }
-          console.log(mainSel, inditem, "single selector added"); //Utilities 2211 checked
-          console.log(itemsArray, "added single")
-        } else { //if Other, checked
+          console.log(itemsArray, mainSel, "singleSel added", inditem)
+        } else { //if Other, single selector checked
           if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
             if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
-            let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
-            console.log(mainSel, $(this).siblings('span').text()) //All Industry Utilities single selector checked || Loan Range a 150-350
+              let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
+              if (mainSel == "Loan Range") {
+                let lritem = $(this).siblings('span').text()
+                let newlrobj = {lritem, 'stream':true}
+                var existlrObj = itemsArray['LR'].find(({lritem}) => lritem === newlrobj.lritem);
+                if(existlrObj) {
+                  existlrObj.stream = newlrobj.stream;
+                } else {
+                  itemsArray['LR'].push(newlrobj)
+                };
+                console.log(itemsArray, mainSel, "singleSel added", lritem)
+              }
             }
           } 
         }
@@ -2461,11 +2470,20 @@ $(htmlObject).on("change", function(e) {
             } else {
               itemsArray['IND'].push(newobj)
             }
-            console.log(mainSel, inditem,"single selector removed"); //Utilities 2211 unchecked
-            console.log(itemsArray, "removed single")
+            console.log(itemsArray, mainSel, "singleSel removed", inditem) //Utilities 2211 unchecked
             } else { //if Other, unchecked
               if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
-                console.log(mainSel, $(this).siblings('span').text(), "single selector unchecked") //All Industry Utilities single selector unchecked || Loan Range a 150-350 uncheked
+                if (mainSel == "Loan Range") {
+                  let lritem = $(this).siblings('span').text()
+                  let newlrobj = {lritem, 'stream':false}
+                  var existlrObj = itemsArray['LR'].find(({lritem}) => lritem === newlrobj.lritem);
+                  if(existlrObj) {
+                    existlrObj.stream = newlrobj.stream;
+                  } else {
+                    itemsArray['LR'].push(newlrobj)
+                  };
+                  console.log(mainSel, itemsArray, "singleSel removed", lritem)//All Other SingleSel
+                }
               }
             }
           } 
