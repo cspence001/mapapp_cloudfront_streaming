@@ -2344,7 +2344,7 @@ layerControl.addTo(myMap);
 // filtereditems= new Array();
 //LabelSelectors
 
-inditemsArray= {
+itemsArray= {
   'IND':[],
   'LR':[]
 };
@@ -2362,19 +2362,29 @@ $(htmlObject).on("change", function(e) {
       ancestors.forEach(item =>{
         let inditem = item.children[0].children[1].innerText.slice(0,4)
         let newobj = {inditem, 'stream':true}
-        var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+        var existObj = itemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
         if(existObj) {
           existObj.stream = newobj.stream;
         } else {
-          inditemsArray['IND'].push(newobj)
-        }console.log(mainSel, inditem);
-      }) //push parameters to websocket
-      }console.log(inditemsArray, "added")
+          itemsArray['IND'].push(newobj)
+        }//console.log(mainSel, inditem);
+      }); console.log(itemsArray, "Industry MultiSel added") //push parameters to websocket 
+      }
       if (!$(this).parents('.leaflet-layerstree-node:nth(1)')[0]) { //If All Other node checked
         var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
         NodeList.prototype.forEach = Array.prototype.forEach
-        ancestors.forEach(item =>
-          console.log(mainSel, item.children[0].children[1].innerText)); //Loan Range a,b,c,d,e
+        ancestors.forEach(item => {
+          if (mainSel == "Loan Range") {
+            let lritem = item.children[0].children[1].innerText;
+            let newlrobj = {lritem, 'stream':true}
+            var existlrObj = itemsArray['LR'].find(({lritem}) => lritem === newlrobj.lritem);
+            if(existlrObj) {
+              existlrObj.stream = newlrobj.stream;
+            } else {
+              itemsArray['LR'].push(newlrobj)
+            }
+          }
+        });console.log(mainSel, itemsArray, "All Other MultiSel added"); //Loan Range a,b,c,d,e
       }
     } else {//If All Ind unchecked
         if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
@@ -2383,22 +2393,32 @@ $(htmlObject).on("change", function(e) {
           ancestors.forEach(item => {
             let inditem = item.children[0].children[1].innerText.slice(0,4)
             let newobj = {inditem, 'stream':false}
-            var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+            var existObj = itemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
             if(existObj) {
               existObj.stream = newobj.stream;
             } else {
-              inditemsArray['IND'].push(newobj)
+              itemsArray['IND'].push(newobj)
             }
-          })
-          console.log(inditemsArray, "new")
+          });console.log(itemsArray, "Ind MultiSel removed")
           //let listContainingRemainingValues = inditems.filter(f => !IND.includes(f))
           //console.log(mainSel, inditems, "is unchecked"); //Utilities 2211 2212 2213 unchecked
           // ++ push parameters to websocket
         } else { //If All Other unchecked
           var ancestors = $(this).parents('.leaflet-layerstree-node')[0].children[1].childNodes;
           NodeList.prototype.forEach = Array.prototype.forEach
-          ancestors.forEach(item =>
-            console.log(mainSel, item.children[0].children[1].innerText,"is unchecked")); //Loan Rnage a,b,c,d,e unchecked
+          ancestors.forEach(item =>{
+            if (mainSel == "Loan Range") {
+              let lritem = item.children[0].children[1].innerText;
+              let newlrobj = {lritem, 'stream':false}
+              var existlrObj = itemsArray['LR'].find(({lritem}) => lritem === newlrobj.lritem);
+              if(existlrObj) {
+                existlrObj.stream = newlrobj.stream;
+              } else {
+                itemsArray['LR'].push(newlrobj)
+              }
+            }
+          });//console.log(mainSel, item.children[0].children[1].innerText,"is unchecked"); //Loan Rnage a,b,c,d,e unchecked
+          console.log(mainSel, itemsArray, "All Other MultiSel removed")
         }
     } //remove parameters from websocket
   } //SINGLE SELECTORS
@@ -2410,14 +2430,14 @@ $(htmlObject).on("change", function(e) {
         if (isnum == true){ //if digit, Industry checked
           let mainSel = ($(this).parents('.leaflet-layerstree-node:nth(1)')[0].children[0].children[1].innerText) //main selector Label
           let newobj = {inditem, 'stream':true}
-          var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+          var existObj = itemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
           if(existObj) {
             existObj.stream = newobj.stream;
           } else {
-            inditemsArray['IND'].push(newobj)
+            itemsArray['IND'].push(newobj)
           }
           console.log(mainSel, inditem, "single selector added"); //Utilities 2211 checked
-          console.log(inditemsArray, "added single")
+          console.log(itemsArray, "added single")
         } else { //if Other, checked
           if ($(this).parents('.leaflet-layerstree-node:nth(1)')[0]) {
             if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
@@ -2435,14 +2455,14 @@ $(htmlObject).on("change", function(e) {
           let isnum = /^\d+$/.test(inditem);
           if (isnum == true){ //if digit, Industry unchecked
             let newobj = {inditem, 'stream':false}
-            var existObj = inditemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
+            var existObj = itemsArray['IND'].find(({inditem}) => inditem === newobj.inditem);
             if(existObj) {
               existObj.stream = newobj.stream;
             } else {
-              inditemsArray['IND'].push(newobj)
+              itemsArray['IND'].push(newobj)
             }
             console.log(mainSel, inditem,"single selector removed"); //Utilities 2211 unchecked
-            console.log(inditemsArray, "removed single")
+            console.log(itemsArray, "removed single")
             } else { //if Other, unchecked
               if (!$(this).is('.leaflet-control-layers-selector.leaflet-layerstree-sel-all-checkbox')) {
                 console.log(mainSel, $(this).siblings('span').text(), "single selector unchecked") //All Industry Utilities single selector unchecked || Loan Range a 150-350 uncheked
