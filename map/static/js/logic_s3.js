@@ -2699,9 +2699,20 @@ $(htmlObject).on("change", function(e) {
             }
           } 
       } 
-    } 
+    } console.log(itemsArray)
+    sessionStorage.setItem('myStorage', JSON.stringify(itemsArray));
+    var getsessionStore = JSON.parse(sessionStorage.getItem('myStorage'));
+    state=itemsArray['STATE']
+    sessionStorage.setItem('STATE', JSON.stringify(state));
+    var getsessionStoreSTATE = JSON.parse(sessionStorage.getItem('STATE'));
+    console.log(getsessionStoreSTATE)
+    if(getsessionStoreSTATE.indexOf("STATE").stream ==true){
+      console.log(getsessionStore)
+    }
   }
 })
+//var getsessionStore = JSON.parse(sessionStorage.getItem('myStorage'));
+
   
   // County Legends
   var legend = L.control({ position: "bottomleft" 
