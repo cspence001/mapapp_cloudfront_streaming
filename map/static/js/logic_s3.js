@@ -2200,7 +2200,10 @@ d3.json(cf, function(data){
 
 // SET VIEW TO POP-UP
   myMap.on('popupopen', function (e) {
-    myMap.setView(e.target._popup._latlng, e.target._zoom);
+    myMap.setView(e.target._popup._latlng);
+    myMap.fitBounds(e.target._popup._source._bounds);
+    // myMap.setView(e.target._popup._latlng, e.target._zoom);
+    console.log(e)
   });
 
 
@@ -3081,7 +3084,7 @@ var loansblocklegend = L.control({ position: "bottomleft"
         }).addTo(objloans[idVal]);
       });
     });
-  
+
   
   // BLOCK GROUP CHORO
   var groupblock = L.featureGroup();
