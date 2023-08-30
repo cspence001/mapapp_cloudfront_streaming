@@ -94,13 +94,13 @@
       <h1 class="leaflet-sidebar-header">Points<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
       <h3>Request API for Available Data Instances</h3>
       <h4>Markers by State:</h4>
-      <input type = "checkbox" id = "checkbox3" name="points" class ="checkbox-round" value = "STATES_PTS_51"/> <label for="checkbox3" id="label">Virginia (avail)</label> <br>
-      <input type = "checkbox" id = "checkbox4" name="points" class ="checkbox-round" value = "STATES_PTS_24"/> <label for="checkbox4" id="label">Maryland (avail)</label> <br>
-      <input type = "checkbox" id = "checkbox5" name="points" class ="checkbox-round" value = "STATES_PTS_17"/> <label for="checkbox5" id="label">Illinois (avail)</label> <br>
-      <input type = "checkbox" id = "checkbox6" name="points" class ="checkbox-round" value = "STATES_PTS_48"/> <label for="checkbox6" id="label">Texas (avail)</label> <br><br>
+      <input type = "checkbox" id = "checkbox4" name="points" class ="checkbox-round" value = "STATES_PTS_51"/> <label for="checkbox4" id="label">Virginia (avail)</label> <br>
+      <input type = "checkbox" id = "checkbox5" name="points" class ="checkbox-round" value = "STATES_PTS_24"/> <label for="checkbox5" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "checkbox6" name="points" class ="checkbox-round" value = "STATES_PTS_17"/> <label for="checkbox6" id="label">Illinois (avail)</label> <br>
+      <input type = "checkbox" id = "checkbox7" name="points" class ="checkbox-round" value = "STATES_PTS_48"/> <label for="checkbox7" id="label">Texas (avail)</label> <br><br>
       <input type = "button" id = "mybutton5" value = "Request" /> <br><br>
-      <label for="states">Zoom to State:</label>
-      <select name="dropdown" id="states" value="Select State">
+      <label for="statezoompt">Zoom to State:</label>
+      <select name="dropdown" id="statezoompt" value="Select State">
         <option value="40.6331,-89.3985">Illinois</option>
         <option value="39.0458,-76.6413">Maryland</option>
         <option value="37.4316,-78.6569">Virginia</option>
@@ -112,7 +112,7 @@
       <h1 class="leaflet-sidebar-header">Choropleth<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
       <h3>Request API for Available Data Instances</h3>
             
-      <h4>County Choropleth Request by St/cspence001/selenium_/blob/main/Untitled.ipynbate:</h4>
+      <h4>County Choropleth Request by State</h4>
       <input type = "checkbox" id = "51" name="county" class ="checkbox-round" value="STATES_PTS_51" file="CT_51"/> <label for="51" id="label">Virginia (avail)</label> <br>
       <input type = "checkbox" id = "24" name="county" class ="checkbox-round" value="STATES_PTS_24" file="CT_24"/> <label for="24" id="label">Maryland (avail)</label> <br>
       <input type = "checkbox" id = "17" name="county" class ="checkbox-round" value="STATES_PTS_17" file="CT_17"/> <label for="17" id="label">Illinois (avail)</label> <br>
@@ -121,17 +121,17 @@
       <!-- <b>Enable Marker Display for County on Click:</b> <br> -->
   
       <h4>Block Group Choropleth Request by State:</h4>
-      <input type = "checkbox" id = "51bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_51" file="/states/51blockgroup.json" /> <label for="51bg" id="label">Virginia (avail)</label> <br>
-      <input type = "checkbox" id = "24bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_24" file="/states/24blockgroup.json" /> <label for="24bg" id="label">Maryland (avail)</label> <br>
-      <input type = "checkbox" id = "17bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_17" file="/states/17blockgroup.json" /> <label for="17bg" id="label">Illinois (avail)</label> <br>
-      <input type = "checkbox" id = "48bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_48" file="/states/48blockgroup.json" /> <label for="48bg" id="label">Texas (avail)</label> <br> <br>
+      <input type = "checkbox" id = "51bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_51" file="BG_51" /> <label for="51bg" id="label">Virginia (avail)</label> <br>
+      <input type = "checkbox" id = "24bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_24" file="BG_24" /> <label for="24bg" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "17bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_17" file="BG_17" /> <label for="17bg" id="label">Illinois (avail)</label> <br>
+      <input type = "checkbox" id = "48bg" name="blockgroup" class ="checkbox-round" value="STATES_PTS_48" file="BG_48" /> <label for="48bg" id="label">Texas (avail)</label> <br> <br>
       <input type = "button" id = "mybutton1" value = "BlockGroupData" /> <br> 
   
       <h4>Block Choropleth Request by State:</h4>
       <input type = "checkbox" id = "51b" name="block" class ="checkbox-round" value="STATES_PTS_51" file="BLOCK_51" /> <label for="51b" id="label">Virginia (avail)</label> <br>
-      <input type = "checkbox" id = "24b" name="block" class ="checkbox-round" value="STATES_PTS_24" file="/states/24block.json" /> <label for="24b" id="label">Maryland (avail)</label> <br>
+      <input type = "checkbox" id = "24b" name="block" class ="checkbox-round" value="STATES_PTS_24" file="BLOCK_24" /> <label for="24b" id="label">Maryland (avail)</label> <br>
       <input type = "checkbox" id = "17b" name="block" class ="checkbox-round" value="STATES_PTS_17" file="BLOCK_17" /> <label for="17b" id="label">Illinois (avail)</label> <br> 
-      <input type = "checkbox" id = "48b" name="block" class ="checkbox-round" value="STATES_PTS_48" file="/states/48block.json" /> <label for="48b" id="label">Texas (avail)</label> <br> <br>
+      <input type = "checkbox" id = "48b" name="block" class ="checkbox-round" value="STATES_PTS_48" file="BLOCK_48" /> <label for="48b" id="label">Texas (avail)</label> <br> <br>
       <input type = "button" id = "mybutton2" value = "BlockData" /> <br> <br>
 
       <b>Enable Marker Display on Click: (when active)</b> <br>
@@ -142,8 +142,8 @@
       <b>Refreshes Points Displayed for Choropleth Layers:</b> <br>
       <input type = "button" id = "mybutton4" value = "RefreshPointsWithin" /> <br><br>
 
-      <label for="states">Zoom to State:</label>
-      <select name="dropdown" id="states">
+      <label for="statezoomchoro">Zoom to State:</label>
+      <select name="dropdown" id="statezoomchoro">
         <option value="40.6331,-89.3985">Illinois</option>
         <option value="39.0458,-76.6413">Maryland</option>
         <option value="37.4316,-78.6569">Virginia</option>

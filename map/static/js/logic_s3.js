@@ -2175,7 +2175,7 @@ d3.json(cf, function(data){
     if (!myMap.hasLayer(objloans[17]) && !myMap.hasLayer(objloans[24]) && !myMap.hasLayer(objloans[51]) && !myMap.hasLayer(objloans[48])) {
       this.removeControl(loanslegend);
     } 
-    if (!myMap.hasLayer(objbg[17]) && !myMap.hasLayer(objbg[24]) && !myMap.hasLayer(objbg[24]) && !myMap.hasLayer(objbg[48])) {
+    if (!myMap.hasLayer(objbg[17]) && !myMap.hasLayer(objbg[24]) && !myMap.hasLayer(objbg[51]) && !myMap.hasLayer(objbg[48])) {
       myMap.removeControl(blockgrouplegend);
     }
     if (!myMap.hasLayer(objbgjobs[17]) && !myMap.hasLayer(objbgjobs[24]) && !myMap.hasLayer(objbgjobs[51]) && !myMap.hasLayer(objbgjobs[48])) {
@@ -2250,15 +2250,24 @@ searchControl.on('results', function (data) {
         }
     })
 
-    const linkcontentbg = L.layerGroup().addTo(myMap)
-    $("#checkbox2").change(function () { 
-      if (this.checked){
-      groupblock.addTo(linkcontentbg)
+  const linkcontentbg = L.layerGroup().addTo(myMap)
+  $("#checkbox2").change(function () { 
+    if (this.checked){
+    groupblock.addTo(linkcontentbg)
+    }
+    else {
+      groupblock.remove(linkcontentbg)
       }
-      else {
-        groupblock.remove(linkcontentbg)
-        }
-    })
+  })
+  const linkcontentb = L.layerGroup().addTo(myMap)
+  $("#checkbox3").change(function () { 
+    if (this.checked){
+    block.addTo(linkcontentb)
+    }
+    else {
+      block.remove(linkcontentb)
+      }
+  })
 
     // myMap.on('overlayadd overlayremove', function() {
     //   if (myMap.hasLayer(groupblock)) {
@@ -2281,6 +2290,7 @@ searchControl.on('results', function (data) {
     $("#mybutton4").click(function (event) { 
       group.clearLayers()
       groupblock.clearLayers()
+      block.clearLayers()
     })
 
 
@@ -2999,9 +3009,7 @@ var loansblocklegend = L.control({ position: "bottomleft"
               51 : new L.layerGroup(), 
               48 : new L.layerGroup(), 
               17 : new L.layerGroup(),
-              24 : new L.layerGroup() }
-
-              
+              24 : new L.layerGroup() }          
   var geojson;
   var jobsgeojson;
   var loansgeojson;
@@ -3077,8 +3085,8 @@ var loansblocklegend = L.control({ position: "bottomleft"
   
   // BLOCK GROUP CHORO
   var groupblock = L.featureGroup();
-  var groupblockjobs = L.featureGroup();
-  var groupblockloans = L.featureGroup();
+  // var groupblockjobs = L.featureGroup();
+  // var groupblockloans = L.featureGroup();
   let objbg = { 
     51 : new L.layerGroup(), 
     48 : new L.layerGroup(), 
@@ -3168,6 +3176,7 @@ var loansblocklegend = L.control({ position: "bottomleft"
 
 
 // BLOCK CHORO 
+var block = L.featureGroup()
 let objblock = { 
   51 : new L.layerGroup(),
   48 : new L.layerGroup(),  
@@ -3211,7 +3220,7 @@ $("#mybutton2").click(function (event) {
           onEachFeature: function (feature, layer) { 
             layer.bindPopup("Loan Recipient: " + feature.properties.BorrowerName + "<br>Borrower Address: " + feature.properties.full_add + "<br>Business Type: " + feature.properties.BusinessType + "<br><b>Loan Type</b>: " + feature.properties.ProcessingMethod + "<br>Date Approved: " + feature.properties.DateApproved + "<br>Current Approval Amount $: " + feature.properties.CurrentApprovalAmount + "<br>Jobs Reported #: " + feature.properties.JobsReported + "<br>Loan Forgiveness Amount: " + feature.properties.ForgivenessAmount + "<br>Loan Status: " + feature.properties.LoanStatus + "<br>Loan Status Date: " + feature.properties.LoanStatusDate + "<br>Servicing Lender: " + feature.properties.ServicingLenderName + "<br>Estimated Lender Profit: " + feature.properties.Estimated_LenderProfit + "<br>Industry: "+ feature.properties.Industry)
           }
-        }).addTo(groupblock);
+        }).addTo(block);
         var ptswithin = turf.pointsWithinPolygon(myPts.toGeoJSON(), layer.toGeoJSON())
         pointsInBuffer.addData(ptswithin);
       }) 
