@@ -2213,8 +2213,6 @@ $('select[name="dropdown"]').change(function(){
   var lat = latlng[0];
   var lng = latlng[1];
   var zoom = 8;
-  // add a marker
-  var marker = L.marker([lat, lng],{}).addTo(myMap);
   // set the view
   myMap.flyTo([lat, lng], zoom);
 })
@@ -3019,7 +3017,7 @@ var loansblocklegend = L.control({ position: "bottomleft"
 
   $("#mybutton").click(function (event) { 
     if ($("input[name='county']:checked")){
-      ptsData = $("input[name='county']:checked").val()
+      ptsData = $("input[name='county']:checked").val() //add if/else clause to check if pts data already loaded for state
       var countyData = $("input[name='county']:checked").attr('file')
       var idVal = $("input[name='county']:checked").attr('id')
       var d1 = $(`#label[for='${idVal}']`)
