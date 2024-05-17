@@ -698,1289 +698,1289 @@ d3.json(cf, function(data){
         const content = L.layerGroup().addTo(myMap);
         // filter selection
         myMap.on('overlayadd overlayremove', () => {
-       if (myMap.hasLayer(ind00ss00group)) { objSS['IND00SS00'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind00ss00group)) {categoryObjects.objSS['IND00SS00'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss11group)) { objSS['IND11SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss11group)) {categoryObjects.objSS['IND11SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss12group)) { objSS['IND11SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss12group)) {categoryObjects.objSS['IND11SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss13group)) { objSS['IND11SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss13group)) {categoryObjects.objSS['IND11SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss14group)) { objSS['IND11SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss14group)) {categoryObjects.objSS['IND11SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss19group)) { objSS['IND11SS19'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss19group)) {categoryObjects.objSS['IND11SS19'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss21group)) { objSS['IND11SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss21group)) {categoryObjects.objSS['IND11SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss22group)) { objSS['IND11SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss22group)) {categoryObjects.objSS['IND11SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss23group)) { objSS['IND11SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss23group)) {categoryObjects.objSS['IND11SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss24group)) { objSS['IND11SS24'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss24group)) {categoryObjects.objSS['IND11SS24'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss25group)) { objSS['IND11SS25'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss25group)) {categoryObjects.objSS['IND11SS25'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss29group)) { objSS['IND11SS29'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss29group)) {categoryObjects.objSS['IND11SS29'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss31group)) { objSS['IND11SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss31group)) {categoryObjects.objSS['IND11SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss32group)) { objSS['IND11SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss32group)) {categoryObjects.objSS['IND11SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss33group)) { objSS['IND11SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss33group)) {categoryObjects.objSS['IND11SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss41group)) { objSS['IND11SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss41group)) {categoryObjects.objSS['IND11SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss42group)) { objSS['IND11SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss42group)) {categoryObjects.objSS['IND11SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss51group)) { objSS['IND11SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss51group)) {categoryObjects.objSS['IND11SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss52group)) { objSS['IND11SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss52group)) {categoryObjects.objSS['IND11SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind11ss53group)) { objSS['IND11SS53'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind11ss53group)) {categoryObjects.objSS['IND11SS53'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind21ss11group)) { objSS['IND21SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind21ss11group)) {categoryObjects.objSS['IND21SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind21ss21group)) { objSS['IND21SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind21ss21group)) {categoryObjects.objSS['IND21SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind21ss22group)) { objSS['IND21SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind21ss22group)) {categoryObjects.objSS['IND21SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind21ss23group)) { objSS['IND21SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind21ss23group)) {categoryObjects.objSS['IND21SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind21ss31group)) { objSS['IND21SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind21ss31group)) {categoryObjects.objSS['IND21SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind22ss11group)) { objSS['IND22SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind22ss11group)) {categoryObjects.objSS['IND22SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind22ss12group)) { objSS['IND22SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind22ss12group)) {categoryObjects.objSS['IND22SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind22ss13group)) { objSS['IND22SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind22ss13group)) {categoryObjects.objSS['IND22SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss61group)) { objSS['IND23SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss61group)) {categoryObjects.objSS['IND23SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss62group)) { objSS['IND23SS62'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss62group)) {categoryObjects.objSS['IND23SS62'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss71group)) { objSS['IND23SS71'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss71group)) {categoryObjects.objSS['IND23SS71'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss72group)) { objSS['IND23SS72'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss72group)) {categoryObjects.objSS['IND23SS72'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss73group)) { objSS['IND23SS73'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss73group)) {categoryObjects.objSS['IND23SS73'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss79group)) { objSS['IND23SS79'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss79group)) {categoryObjects.objSS['IND23SS79'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss81group)) { objSS['IND23SS81'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss81group)) {categoryObjects.objSS['IND23SS81'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss82group)) { objSS['IND23SS82'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss82group)) {categoryObjects.objSS['IND23SS82'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss83group)) { objSS['IND23SS83'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss83group)) {categoryObjects.objSS['IND23SS83'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind23ss89group)) { objSS['IND23SS89'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind23ss89group)) {categoryObjects.objSS['IND23SS89'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss11group)) { objSS['IND31SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss11group)) {categoryObjects.objSS['IND31SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss12group)) { objSS['IND31SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss12group)) {categoryObjects.objSS['IND31SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss13group)) { objSS['IND31SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss13group)) {categoryObjects.objSS['IND31SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss14group)) { objSS['IND31SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss14group)) {categoryObjects.objSS['IND31SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss15group)) { objSS['IND31SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss15group)) {categoryObjects.objSS['IND31SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss16group)) { objSS['IND31SS16'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss16group)) {categoryObjects.objSS['IND31SS16'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss17group)) { objSS['IND31SS17'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss17group)) {categoryObjects.objSS['IND31SS17'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss18group)) { objSS['IND31SS18'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss18group)) {categoryObjects.objSS['IND31SS18'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss19group)) { objSS['IND31SS19'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss19group)) {categoryObjects.objSS['IND31SS19'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss21group)) { objSS['IND31SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss21group)) {categoryObjects.objSS['IND31SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss22group)) { objSS['IND31SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss22group)) {categoryObjects.objSS['IND31SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss31group)) { objSS['IND31SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss31group)) {categoryObjects.objSS['IND31SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss32group)) { objSS['IND31SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss32group)) {categoryObjects.objSS['IND31SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss33group)) { objSS['IND31SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss33group)) {categoryObjects.objSS['IND31SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss41group)) { objSS['IND31SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss41group)) {categoryObjects.objSS['IND31SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss49group)) { objSS['IND31SS49'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss49group)) {categoryObjects.objSS['IND31SS49'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss51group)) { objSS['IND31SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss51group)) {categoryObjects.objSS['IND31SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss52group)) { objSS['IND31SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss52group)) {categoryObjects.objSS['IND31SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss59group)) { objSS['IND31SS59'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss59group)) {categoryObjects.objSS['IND31SS59'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss61group)) { objSS['IND31SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss61group)) {categoryObjects.objSS['IND31SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss62group)) { objSS['IND31SS62'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss62group)) {categoryObjects.objSS['IND31SS62'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind31ss69group)) { objSS['IND31SS69'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind31ss69group)) {categoryObjects.objSS['IND31SS69'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss11group)) { objSS['IND32SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss11group)) {categoryObjects.objSS['IND32SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss12group)) { objSS['IND32SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss12group)) {categoryObjects.objSS['IND32SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss19group)) { objSS['IND32SS19'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss19group)) {categoryObjects.objSS['IND32SS19'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss21group)) { objSS['IND32SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss21group)) {categoryObjects.objSS['IND32SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss22group)) { objSS['IND32SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss22group)) {categoryObjects.objSS['IND32SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss31group)) { objSS['IND32SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss31group)) {categoryObjects.objSS['IND32SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss41group)) { objSS['IND32SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss41group)) {categoryObjects.objSS['IND32SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss51group)) { objSS['IND32SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss51group)) {categoryObjects.objSS['IND32SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss52group)) { objSS['IND32SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss52group)) {categoryObjects.objSS['IND32SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss53group)) { objSS['IND32SS53'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss53group)) {categoryObjects.objSS['IND32SS53'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss54group)) { objSS['IND32SS54'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss54group)) {categoryObjects.objSS['IND32SS54'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss55group)) { objSS['IND32SS55'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss55group)) {categoryObjects.objSS['IND32SS55'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss56group)) { objSS['IND32SS56'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss56group)) {categoryObjects.objSS['IND32SS56'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss59group)) { objSS['IND32SS59'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss59group)) {categoryObjects.objSS['IND32SS59'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss61group)) { objSS['IND32SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss61group)) {categoryObjects.objSS['IND32SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss62group)) { objSS['IND32SS62'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss62group)) {categoryObjects.objSS['IND32SS62'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss71group)) { objSS['IND32SS71'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss71group)) {categoryObjects.objSS['IND32SS71'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss72group)) { objSS['IND32SS72'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss72group)) {categoryObjects.objSS['IND32SS72'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss73group)) { objSS['IND32SS73'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss73group)) {categoryObjects.objSS['IND32SS73'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss74group)) { objSS['IND32SS74'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss74group)) {categoryObjects.objSS['IND32SS74'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind32ss79group)) { objSS['IND32SS79'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind32ss79group)) {categoryObjects.objSS['IND32SS79'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss11group)) { objSS['IND33SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss11group)) {categoryObjects.objSS['IND33SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss12group)) { objSS['IND33SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss12group)) {categoryObjects.objSS['IND33SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss13group)) { objSS['IND33SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss13group)) {categoryObjects.objSS['IND33SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss14group)) { objSS['IND33SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss14group)) {categoryObjects.objSS['IND33SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss15group)) { objSS['IND33SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss15group)) {categoryObjects.objSS['IND33SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss21group)) { objSS['IND33SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss21group)) {categoryObjects.objSS['IND33SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss22group)) { objSS['IND33SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss22group)) {categoryObjects.objSS['IND33SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss23group)) { objSS['IND33SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss23group)) {categoryObjects.objSS['IND33SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss24group)) { objSS['IND33SS24'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss24group)) {categoryObjects.objSS['IND33SS24'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss25group)) { objSS['IND33SS25'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss25group)) {categoryObjects.objSS['IND33SS25'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss26group)) { objSS['IND33SS26'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss26group)) {categoryObjects.objSS['IND33SS26'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss27group)) { objSS['IND33SS27'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss27group)) {categoryObjects.objSS['IND33SS27'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss28group)) { objSS['IND33SS28'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss28group)) {categoryObjects.objSS['IND33SS28'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss29group)) { objSS['IND33SS29'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss29group)) {categoryObjects.objSS['IND33SS29'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss31group)) { objSS['IND33SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss31group)) {categoryObjects.objSS['IND33SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss32group)) { objSS['IND33SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss32group)) {categoryObjects.objSS['IND33SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss33group)) { objSS['IND33SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss33group)) {categoryObjects.objSS['IND33SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss34group)) { objSS['IND33SS34'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss34group)) {categoryObjects.objSS['IND33SS34'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss35group)) { objSS['IND33SS35'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss35group)) {categoryObjects.objSS['IND33SS35'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss36group)) { objSS['IND33SS36'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss36group)) {categoryObjects.objSS['IND33SS36'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss39group)) { objSS['IND33SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss39group)) {categoryObjects.objSS['IND33SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss41group)) { objSS['IND33SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss41group)) {categoryObjects.objSS['IND33SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss42group)) { objSS['IND33SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss42group)) {categoryObjects.objSS['IND33SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss43group)) { objSS['IND33SS43'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss43group)) {categoryObjects.objSS['IND33SS43'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss44group)) { objSS['IND33SS44'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss44group)) {categoryObjects.objSS['IND33SS44'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss45group)) { objSS['IND33SS45'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss45group)) {categoryObjects.objSS['IND33SS45'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss46group)) { objSS['IND33SS46'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss46group)) {categoryObjects.objSS['IND33SS46'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss51group)) { objSS['IND33SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss51group)) {categoryObjects.objSS['IND33SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss52group)) { objSS['IND33SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss52group)) {categoryObjects.objSS['IND33SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss53group)) { objSS['IND33SS53'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss53group)) {categoryObjects.objSS['IND33SS53'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss59group)) { objSS['IND33SS59'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss59group)) {categoryObjects.objSS['IND33SS59'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss61group)) { objSS['IND33SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss61group)) {categoryObjects.objSS['IND33SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss62group)) { objSS['IND33SS62'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss62group)) {categoryObjects.objSS['IND33SS62'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss63group)) { objSS['IND33SS63'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss63group)) {categoryObjects.objSS['IND33SS63'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss64group)) { objSS['IND33SS64'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss64group)) {categoryObjects.objSS['IND33SS64'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss65group)) { objSS['IND33SS65'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss65group)) {categoryObjects.objSS['IND33SS65'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss66group)) { objSS['IND33SS66'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss66group)) {categoryObjects.objSS['IND33SS66'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss69group)) { objSS['IND33SS69'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss69group)) {categoryObjects.objSS['IND33SS69'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss71group)) { objSS['IND33SS71'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss71group)) {categoryObjects.objSS['IND33SS71'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss72group)) { objSS['IND33SS72'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss72group)) {categoryObjects.objSS['IND33SS72'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss79group)) { objSS['IND33SS79'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss79group)) {categoryObjects.objSS['IND33SS79'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss91group)) { objSS['IND33SS91'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss91group)) {categoryObjects.objSS['IND33SS91'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind33ss99group)) { objSS['IND33SS99'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind33ss99group)) {categoryObjects.objSS['IND33SS99'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss31group)) { objSS['IND42SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss31group)) {categoryObjects.objSS['IND42SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss32group)) { objSS['IND42SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss32group)) {categoryObjects.objSS['IND42SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss33group)) { objSS['IND42SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss33group)) {categoryObjects.objSS['IND42SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss34group)) { objSS['IND42SS34'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss34group)) {categoryObjects.objSS['IND42SS34'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss35group)) { objSS['IND42SS35'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss35group)) {categoryObjects.objSS['IND42SS35'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss36group)) { objSS['IND42SS36'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss36group)) {categoryObjects.objSS['IND42SS36'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss37group)) { objSS['IND42SS37'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss37group)) {categoryObjects.objSS['IND42SS37'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss38group)) { objSS['IND42SS38'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss38group)) {categoryObjects.objSS['IND42SS38'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss39group)) { objSS['IND42SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss39group)) {categoryObjects.objSS['IND42SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss41group)) { objSS['IND42SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss41group)) {categoryObjects.objSS['IND42SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss42group)) { objSS['IND42SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss42group)) {categoryObjects.objSS['IND42SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss43group)) { objSS['IND42SS43'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss43group)) {categoryObjects.objSS['IND42SS43'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss44group)) { objSS['IND42SS44'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss44group)) {categoryObjects.objSS['IND42SS44'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss45group)) { objSS['IND42SS45'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss45group)) {categoryObjects.objSS['IND42SS45'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss46group)) { objSS['IND42SS46'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss46group)) {categoryObjects.objSS['IND42SS46'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss47group)) { objSS['IND42SS47'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss47group)) {categoryObjects.objSS['IND42SS47'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss48group)) { objSS['IND42SS48'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss48group)) {categoryObjects.objSS['IND42SS48'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss49group)) { objSS['IND42SS49'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss49group)) {categoryObjects.objSS['IND42SS49'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind42ss51group)) { objSS['IND42SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind42ss51group)) {categoryObjects.objSS['IND42SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss11group)) { objSS['IND44SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss11group)) {categoryObjects.objSS['IND44SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss12group)) { objSS['IND44SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss12group)) {categoryObjects.objSS['IND44SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss13group)) { objSS['IND44SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss13group)) {categoryObjects.objSS['IND44SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss21group)) { objSS['IND44SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss21group)) {categoryObjects.objSS['IND44SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss22group)) { objSS['IND44SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss22group)) {categoryObjects.objSS['IND44SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss31group)) { objSS['IND44SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss31group)) {categoryObjects.objSS['IND44SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss41group)) { objSS['IND44SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss41group)) {categoryObjects.objSS['IND44SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss42group)) { objSS['IND44SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss42group)) {categoryObjects.objSS['IND44SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss51group)) { objSS['IND44SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss51group)) {categoryObjects.objSS['IND44SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss52group)) { objSS['IND44SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss52group)) {categoryObjects.objSS['IND44SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss53group)) { objSS['IND44SS53'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss53group)) {categoryObjects.objSS['IND44SS53'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss61group)) { objSS['IND44SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss61group)) {categoryObjects.objSS['IND44SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss71group)) { objSS['IND44SS71'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss71group)) {categoryObjects.objSS['IND44SS71'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss81group)) { objSS['IND44SS81'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss81group)) {categoryObjects.objSS['IND44SS81'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss82group)) { objSS['IND44SS82'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss82group)) {categoryObjects.objSS['IND44SS82'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind44ss83group)) { objSS['IND44SS83'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind44ss83group)) {categoryObjects.objSS['IND44SS83'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss11group)) { objSS['IND45SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss11group)) {categoryObjects.objSS['IND45SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss12group)) { objSS['IND45SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss12group)) {categoryObjects.objSS['IND45SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss22group)) { objSS['IND45SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss22group)) {categoryObjects.objSS['IND45SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss23group)) { objSS['IND45SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss23group)) {categoryObjects.objSS['IND45SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss31group)) { objSS['IND45SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss31group)) {categoryObjects.objSS['IND45SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss32group)) { objSS['IND45SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss32group)) {categoryObjects.objSS['IND45SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss33group)) { objSS['IND45SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss33group)) {categoryObjects.objSS['IND45SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss39group)) { objSS['IND45SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss39group)) {categoryObjects.objSS['IND45SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss41group)) { objSS['IND45SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss41group)) {categoryObjects.objSS['IND45SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss42group)) { objSS['IND45SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss42group)) {categoryObjects.objSS['IND45SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind45ss43group)) { objSS['IND45SS43'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind45ss43group)) {categoryObjects.objSS['IND45SS43'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss11group)) { objSS['IND48SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss11group)) {categoryObjects.objSS['IND48SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss12group)) { objSS['IND48SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss12group)) {categoryObjects.objSS['IND48SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss21group)) { objSS['IND48SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss21group)) {categoryObjects.objSS['IND48SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss31group)) { objSS['IND48SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss31group)) {categoryObjects.objSS['IND48SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss32group)) { objSS['IND48SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss32group)) {categoryObjects.objSS['IND48SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss41group)) { objSS['IND48SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss41group)) {categoryObjects.objSS['IND48SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss42group)) { objSS['IND48SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss42group)) {categoryObjects.objSS['IND48SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss51group)) { objSS['IND48SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss51group)) {categoryObjects.objSS['IND48SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss52group)) { objSS['IND48SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss52group)) {categoryObjects.objSS['IND48SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss53group)) { objSS['IND48SS53'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss53group)) {categoryObjects.objSS['IND48SS53'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss54group)) { objSS['IND48SS54'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss54group)) {categoryObjects.objSS['IND48SS54'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss55group)) { objSS['IND48SS55'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss55group)) {categoryObjects.objSS['IND48SS55'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss59group)) { objSS['IND48SS59'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss59group)) {categoryObjects.objSS['IND48SS59'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss61group)) { objSS['IND48SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss61group)) {categoryObjects.objSS['IND48SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss62group)) { objSS['IND48SS62'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss62group)) {categoryObjects.objSS['IND48SS62'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss69group)) { objSS['IND48SS69'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss69group)) {categoryObjects.objSS['IND48SS69'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss71group)) { objSS['IND48SS71'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss71group)) {categoryObjects.objSS['IND48SS71'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss72group)) { objSS['IND48SS72'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss72group)) {categoryObjects.objSS['IND48SS72'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss79group)) { objSS['IND48SS79'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss79group)) {categoryObjects.objSS['IND48SS79'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss81group)) { objSS['IND48SS81'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss81group)) {categoryObjects.objSS['IND48SS81'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss82group)) { objSS['IND48SS82'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss82group)) {categoryObjects.objSS['IND48SS82'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss83group)) { objSS['IND48SS83'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss83group)) {categoryObjects.objSS['IND48SS83'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss84group)) { objSS['IND48SS84'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss84group)) {categoryObjects.objSS['IND48SS84'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss85group)) { objSS['IND48SS85'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss85group)) {categoryObjects.objSS['IND48SS85'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind48ss89group)) { objSS['IND48SS89'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind48ss89group)) {categoryObjects.objSS['IND48SS89'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind49ss11group)) { objSS['IND49SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind49ss11group)) {categoryObjects.objSS['IND49SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind49ss21group)) { objSS['IND49SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind49ss21group)) {categoryObjects.objSS['IND49SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind49ss22group)) { objSS['IND49SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind49ss22group)) {categoryObjects.objSS['IND49SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind49ss31group)) { objSS['IND49SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind49ss31group)) {categoryObjects.objSS['IND49SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss11group)) { objSS['IND51SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss11group)) {categoryObjects.objSS['IND51SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss12group)) { objSS['IND51SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss12group)) {categoryObjects.objSS['IND51SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss21group)) { objSS['IND51SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss21group)) {categoryObjects.objSS['IND51SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss22group)) { objSS['IND51SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss22group)) {categoryObjects.objSS['IND51SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss51group)) { objSS['IND51SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss51group)) {categoryObjects.objSS['IND51SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss52group)) { objSS['IND51SS52'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss52group)) {categoryObjects.objSS['IND51SS52'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss73group)) { objSS['IND51SS73'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss73group)) {categoryObjects.objSS['IND51SS73'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss74group)) { objSS['IND51SS74'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss74group)) {categoryObjects.objSS['IND51SS74'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss79group)) { objSS['IND51SS79'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss79group)) {categoryObjects.objSS['IND51SS79'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss82group)) { objSS['IND51SS82'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss82group)) {categoryObjects.objSS['IND51SS82'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind51ss91group)) { objSS['IND51SS91'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind51ss91group)) {categoryObjects.objSS['IND51SS91'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss11group)) { objSS['IND52SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss11group)) {categoryObjects.objSS['IND52SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss21group)) { objSS['IND52SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss21group)) {categoryObjects.objSS['IND52SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss22group)) { objSS['IND52SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss22group)) {categoryObjects.objSS['IND52SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss23group)) { objSS['IND52SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss23group)) {categoryObjects.objSS['IND52SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss31group)) { objSS['IND52SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss31group)) {categoryObjects.objSS['IND52SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss32group)) { objSS['IND52SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss32group)) {categoryObjects.objSS['IND52SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss39group)) { objSS['IND52SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss39group)) {categoryObjects.objSS['IND52SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss41group)) { objSS['IND52SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss41group)) {categoryObjects.objSS['IND52SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss42group)) { objSS['IND52SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss42group)) {categoryObjects.objSS['IND52SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss51group)) { objSS['IND52SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss51group)) {categoryObjects.objSS['IND52SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind52ss59group)) { objSS['IND52SS59'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind52ss59group)) {categoryObjects.objSS['IND52SS59'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss11group)) { objSS['IND53SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss11group)) {categoryObjects.objSS['IND53SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss12group)) { objSS['IND53SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss12group)) {categoryObjects.objSS['IND53SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss13group)) { objSS['IND53SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss13group)) {categoryObjects.objSS['IND53SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss21group)) { objSS['IND53SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss21group)) {categoryObjects.objSS['IND53SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss22group)) { objSS['IND53SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss22group)) {categoryObjects.objSS['IND53SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss23group)) { objSS['IND53SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss23group)) {categoryObjects.objSS['IND53SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss24group)) { objSS['IND53SS24'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss24group)) {categoryObjects.objSS['IND53SS24'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind53ss31group)) { objSS['IND53SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind53ss31group)) {categoryObjects.objSS['IND53SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss11group)) { objSS['IND54SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss11group)) {categoryObjects.objSS['IND54SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss12group)) { objSS['IND54SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss12group)) {categoryObjects.objSS['IND54SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss13group)) { objSS['IND54SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss13group)) {categoryObjects.objSS['IND54SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss14group)) { objSS['IND54SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss14group)) {categoryObjects.objSS['IND54SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss15group)) { objSS['IND54SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss15group)) {categoryObjects.objSS['IND54SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss16group)) { objSS['IND54SS16'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss16group)) {categoryObjects.objSS['IND54SS16'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss17group)) { objSS['IND54SS17'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss17group)) {categoryObjects.objSS['IND54SS17'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss18group)) { objSS['IND54SS18'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss18group)) {categoryObjects.objSS['IND54SS18'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind54ss19group)) { objSS['IND54SS19'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind54ss19group)) {categoryObjects.objSS['IND54SS19'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind55ss11group)) { objSS['IND55SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind55ss11group)) {categoryObjects.objSS['IND55SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss11group)) { objSS['IND56SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss11group)) {categoryObjects.objSS['IND56SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss12group)) { objSS['IND56SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss12group)) {categoryObjects.objSS['IND56SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss13group)) { objSS['IND56SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss13group)) {categoryObjects.objSS['IND56SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss14group)) { objSS['IND56SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss14group)) {categoryObjects.objSS['IND56SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss15group)) { objSS['IND56SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss15group)) {categoryObjects.objSS['IND56SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss16group)) { objSS['IND56SS16'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss16group)) {categoryObjects.objSS['IND56SS16'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss17group)) { objSS['IND56SS17'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss17group)) {categoryObjects.objSS['IND56SS17'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss19group)) { objSS['IND56SS19'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss19group)) {categoryObjects.objSS['IND56SS19'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss21group)) { objSS['IND56SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss21group)) {categoryObjects.objSS['IND56SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss22group)) { objSS['IND56SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss22group)) {categoryObjects.objSS['IND56SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind56ss29group)) { objSS['IND56SS29'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind56ss29group)) {categoryObjects.objSS['IND56SS29'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss11group)) { objSS['IND61SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss11group)) {categoryObjects.objSS['IND61SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss12group)) { objSS['IND61SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss12group)) {categoryObjects.objSS['IND61SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss13group)) { objSS['IND61SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss13group)) {categoryObjects.objSS['IND61SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss14group)) { objSS['IND61SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss14group)) {categoryObjects.objSS['IND61SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss15group)) { objSS['IND61SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss15group)) {categoryObjects.objSS['IND61SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss16group)) { objSS['IND61SS16'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss16group)) {categoryObjects.objSS['IND61SS16'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind61ss17group)) { objSS['IND61SS17'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind61ss17group)) {categoryObjects.objSS['IND61SS17'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss11group)) { objSS['IND62SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss11group)) {categoryObjects.objSS['IND62SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss12group)) { objSS['IND62SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss12group)) {categoryObjects.objSS['IND62SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss13group)) { objSS['IND62SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss13group)) {categoryObjects.objSS['IND62SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss14group)) { objSS['IND62SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss14group)) {categoryObjects.objSS['IND62SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss15group)) { objSS['IND62SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss15group)) {categoryObjects.objSS['IND62SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss16group)) { objSS['IND62SS16'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss16group)) {categoryObjects.objSS['IND62SS16'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss19group)) { objSS['IND62SS19'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss19group)) {categoryObjects.objSS['IND62SS19'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss21group)) { objSS['IND62SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss21group)) {categoryObjects.objSS['IND62SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss22group)) { objSS['IND62SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss22group)) {categoryObjects.objSS['IND62SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss23group)) { objSS['IND62SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss23group)) {categoryObjects.objSS['IND62SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss31group)) { objSS['IND62SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss31group)) {categoryObjects.objSS['IND62SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss32group)) { objSS['IND62SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss32group)) {categoryObjects.objSS['IND62SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss33group)) { objSS['IND62SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss33group)) {categoryObjects.objSS['IND62SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss39group)) { objSS['IND62SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss39group)) {categoryObjects.objSS['IND62SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss41group)) { objSS['IND62SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss41group)) {categoryObjects.objSS['IND62SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss42group)) { objSS['IND62SS42'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss42group)) {categoryObjects.objSS['IND62SS42'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss43group)) { objSS['IND62SS43'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss43group)) {categoryObjects.objSS['IND62SS43'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind62ss44group)) { objSS['IND62SS44'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind62ss44group)) {categoryObjects.objSS['IND62SS44'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss11group)) { objSS['IND71SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss11group)) {categoryObjects.objSS['IND71SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss12group)) { objSS['IND71SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss12group)) {categoryObjects.objSS['IND71SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss13group)) { objSS['IND71SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss13group)) {categoryObjects.objSS['IND71SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss14group)) { objSS['IND71SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss14group)) {categoryObjects.objSS['IND71SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss15group)) { objSS['IND71SS15'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss15group)) {categoryObjects.objSS['IND71SS15'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss21group)) { objSS['IND71SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss21group)) {categoryObjects.objSS['IND71SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss31group)) { objSS['IND71SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss31group)) {categoryObjects.objSS['IND71SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss32group)) { objSS['IND71SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss32group)) {categoryObjects.objSS['IND71SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind71ss39group)) { objSS['IND71SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind71ss39group)) {categoryObjects.objSS['IND71SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind72ss11group)) { objSS['IND72SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind72ss11group)) {categoryObjects.objSS['IND72SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind72ss12group)) { objSS['IND72SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind72ss12group)) {categoryObjects.objSS['IND72SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind72ss13group)) { objSS['IND72SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind72ss13group)) {categoryObjects.objSS['IND72SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind72ss23group)) { objSS['IND72SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind72ss23group)) {categoryObjects.objSS['IND72SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind72ss24group)) { objSS['IND72SS24'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind72ss24group)) {categoryObjects.objSS['IND72SS24'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind72ss25group)) { objSS['IND72SS25'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind72ss25group)) {categoryObjects.objSS['IND72SS25'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss11group)) { objSS['IND81SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss11group)) {categoryObjects.objSS['IND81SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss12group)) { objSS['IND81SS12'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss12group)) {categoryObjects.objSS['IND81SS12'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss13group)) { objSS['IND81SS13'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss13group)) {categoryObjects.objSS['IND81SS13'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss14group)) { objSS['IND81SS14'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss14group)) {categoryObjects.objSS['IND81SS14'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss21group)) { objSS['IND81SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss21group)) {categoryObjects.objSS['IND81SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss22group)) { objSS['IND81SS22'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss22group)) {categoryObjects.objSS['IND81SS22'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss23group)) { objSS['IND81SS23'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss23group)) {categoryObjects.objSS['IND81SS23'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss29group)) { objSS['IND81SS29'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss29group)) {categoryObjects.objSS['IND81SS29'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss31group)) { objSS['IND81SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss31group)) {categoryObjects.objSS['IND81SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss32group)) { objSS['IND81SS32'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss32group)) {categoryObjects.objSS['IND81SS32'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss33group)) { objSS['IND81SS33'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss33group)) {categoryObjects.objSS['IND81SS33'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss34group)) { objSS['IND81SS34'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss34group)) {categoryObjects.objSS['IND81SS34'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss39group)) { objSS['IND81SS39'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss39group)) {categoryObjects.objSS['IND81SS39'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind81ss41group)) { objSS['IND81SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind81ss41group)) {categoryObjects.objSS['IND81SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss11group)) { objSS['IND92SS11'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss11group)) {categoryObjects.objSS['IND92SS11'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss21group)) { objSS['IND92SS21'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss21group)) {categoryObjects.objSS['IND92SS21'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss31group)) { objSS['IND92SS31'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss31group)) {categoryObjects.objSS['IND92SS31'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss41group)) { objSS['IND92SS41'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss41group)) {categoryObjects.objSS['IND92SS41'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss51group)) { objSS['IND92SS51'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss51group)) {categoryObjects.objSS['IND92SS51'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss61group)) { objSS['IND92SS61'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss61group)) {categoryObjects.objSS['IND92SS61'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss71group)) { objSS['IND92SS71'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss71group)) {categoryObjects.objSS['IND92SS71'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind92ss81group)) { objSS['IND92SS81'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind92ss81group)) {categoryObjects.objSS['IND92SS81'].forEach(marker=> marker.addTo(content))
         }
-       if (myMap.hasLayer(ind99ss00group)) { objSS['IND99SS00'].forEach(marker=> marker.addTo(content))
+       if (myMap.hasLayer(ind99ss00group)) {categoryObjects.objSS['IND99SS00'].forEach(marker=> marker.addTo(content))
         }
       //REMOVE
-       if (!myMap.hasLayer(ind00ss00group)) { objSS['IND00SS00'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind00ss00group)) {categoryObjects.objSS['IND00SS00'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss11group)) { objSS['IND11SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss11group)) {categoryObjects.objSS['IND11SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss12group)) { objSS['IND11SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss12group)) {categoryObjects.objSS['IND11SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss13group)) { objSS['IND11SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss13group)) {categoryObjects.objSS['IND11SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss14group)) { objSS['IND11SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss14group)) {categoryObjects.objSS['IND11SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss19group)) { objSS['IND11SS19'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss19group)) {categoryObjects.objSS['IND11SS19'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss21group)) { objSS['IND11SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss21group)) {categoryObjects.objSS['IND11SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss22group)) { objSS['IND11SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss22group)) {categoryObjects.objSS['IND11SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss23group)) { objSS['IND11SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss23group)) {categoryObjects.objSS['IND11SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss24group)) { objSS['IND11SS24'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss24group)) {categoryObjects.objSS['IND11SS24'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss25group)) { objSS['IND11SS25'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss25group)) {categoryObjects.objSS['IND11SS25'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss29group)) { objSS['IND11SS29'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss29group)) {categoryObjects.objSS['IND11SS29'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss31group)) { objSS['IND11SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss31group)) {categoryObjects.objSS['IND11SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss32group)) { objSS['IND11SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss32group)) {categoryObjects.objSS['IND11SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss33group)) { objSS['IND11SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss33group)) {categoryObjects.objSS['IND11SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss41group)) { objSS['IND11SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss41group)) {categoryObjects.objSS['IND11SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss42group)) { objSS['IND11SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss42group)) {categoryObjects.objSS['IND11SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss51group)) { objSS['IND11SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss51group)) {categoryObjects.objSS['IND11SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss52group)) { objSS['IND11SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss52group)) {categoryObjects.objSS['IND11SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind11ss53group)) { objSS['IND11SS53'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind11ss53group)) {categoryObjects.objSS['IND11SS53'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind21ss11group)) { objSS['IND21SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind21ss11group)) {categoryObjects.objSS['IND21SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind21ss21group)) { objSS['IND21SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind21ss21group)) {categoryObjects.objSS['IND21SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind21ss22group)) { objSS['IND21SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind21ss22group)) {categoryObjects.objSS['IND21SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind21ss23group)) { objSS['IND21SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind21ss23group)) {categoryObjects.objSS['IND21SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind21ss31group)) { objSS['IND21SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind21ss31group)) {categoryObjects.objSS['IND21SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind22ss11group)) { objSS['IND22SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind22ss11group)) {categoryObjects.objSS['IND22SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind22ss12group)) { objSS['IND22SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind22ss12group)) {categoryObjects.objSS['IND22SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind22ss13group)) { objSS['IND22SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind22ss13group)) {categoryObjects.objSS['IND22SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss61group)) { objSS['IND23SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss61group)) {categoryObjects.objSS['IND23SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss62group)) { objSS['IND23SS62'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss62group)) {categoryObjects.objSS['IND23SS62'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss71group)) { objSS['IND23SS71'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss71group)) {categoryObjects.objSS['IND23SS71'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss72group)) { objSS['IND23SS72'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss72group)) {categoryObjects.objSS['IND23SS72'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss73group)) { objSS['IND23SS73'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss73group)) {categoryObjects.objSS['IND23SS73'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss79group)) { objSS['IND23SS79'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss79group)) {categoryObjects.objSS['IND23SS79'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss81group)) { objSS['IND23SS81'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss81group)) {categoryObjects.objSS['IND23SS81'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss82group)) { objSS['IND23SS82'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss82group)) {categoryObjects.objSS['IND23SS82'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss83group)) { objSS['IND23SS83'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss83group)) {categoryObjects.objSS['IND23SS83'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind23ss89group)) { objSS['IND23SS89'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind23ss89group)) {categoryObjects.objSS['IND23SS89'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss11group)) { objSS['IND31SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss11group)) {categoryObjects.objSS['IND31SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss12group)) { objSS['IND31SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss12group)) {categoryObjects.objSS['IND31SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss13group)) { objSS['IND31SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss13group)) {categoryObjects.objSS['IND31SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss14group)) { objSS['IND31SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss14group)) {categoryObjects.objSS['IND31SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss15group)) { objSS['IND31SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss15group)) {categoryObjects.objSS['IND31SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss16group)) { objSS['IND31SS16'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss16group)) {categoryObjects.objSS['IND31SS16'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss17group)) { objSS['IND31SS17'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss17group)) {categoryObjects.objSS['IND31SS17'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss18group)) { objSS['IND31SS18'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss18group)) {categoryObjects.objSS['IND31SS18'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss19group)) { objSS['IND31SS19'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss19group)) {categoryObjects.objSS['IND31SS19'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss21group)) { objSS['IND31SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss21group)) {categoryObjects.objSS['IND31SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss22group)) { objSS['IND31SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss22group)) {categoryObjects.objSS['IND31SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss31group)) { objSS['IND31SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss31group)) {categoryObjects.objSS['IND31SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss32group)) { objSS['IND31SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss32group)) {categoryObjects.objSS['IND31SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss33group)) { objSS['IND31SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss33group)) {categoryObjects.objSS['IND31SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss41group)) { objSS['IND31SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss41group)) {categoryObjects.objSS['IND31SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss49group)) { objSS['IND31SS49'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss49group)) {categoryObjects.objSS['IND31SS49'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss51group)) { objSS['IND31SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss51group)) {categoryObjects.objSS['IND31SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss52group)) { objSS['IND31SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss52group)) {categoryObjects.objSS['IND31SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss59group)) { objSS['IND31SS59'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss59group)) {categoryObjects.objSS['IND31SS59'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss61group)) { objSS['IND31SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss61group)) {categoryObjects.objSS['IND31SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss62group)) { objSS['IND31SS62'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss62group)) {categoryObjects.objSS['IND31SS62'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind31ss69group)) { objSS['IND31SS69'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind31ss69group)) {categoryObjects.objSS['IND31SS69'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss11group)) { objSS['IND32SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss11group)) {categoryObjects.objSS['IND32SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss12group)) { objSS['IND32SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss12group)) {categoryObjects.objSS['IND32SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss19group)) { objSS['IND32SS19'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss19group)) {categoryObjects.objSS['IND32SS19'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss21group)) { objSS['IND32SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss21group)) {categoryObjects.objSS['IND32SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss22group)) { objSS['IND32SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss22group)) {categoryObjects.objSS['IND32SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss31group)) { objSS['IND32SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss31group)) {categoryObjects.objSS['IND32SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss41group)) { objSS['IND32SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss41group)) {categoryObjects.objSS['IND32SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss51group)) { objSS['IND32SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss51group)) {categoryObjects.objSS['IND32SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss52group)) { objSS['IND32SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss52group)) {categoryObjects.objSS['IND32SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss53group)) { objSS['IND32SS53'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss53group)) {categoryObjects.objSS['IND32SS53'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss54group)) { objSS['IND32SS54'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss54group)) {categoryObjects.objSS['IND32SS54'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss55group)) { objSS['IND32SS55'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss55group)) {categoryObjects.objSS['IND32SS55'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss56group)) { objSS['IND32SS56'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss56group)) {categoryObjects.objSS['IND32SS56'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss59group)) { objSS['IND32SS59'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss59group)) {categoryObjects.objSS['IND32SS59'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss61group)) { objSS['IND32SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss61group)) {categoryObjects.objSS['IND32SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss62group)) { objSS['IND32SS62'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss62group)) {categoryObjects.objSS['IND32SS62'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss71group)) { objSS['IND32SS71'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss71group)) {categoryObjects.objSS['IND32SS71'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss72group)) { objSS['IND32SS72'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss72group)) {categoryObjects.objSS['IND32SS72'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss73group)) { objSS['IND32SS73'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss73group)) {categoryObjects.objSS['IND32SS73'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss74group)) { objSS['IND32SS74'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss74group)) {categoryObjects.objSS['IND32SS74'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind32ss79group)) { objSS['IND32SS79'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind32ss79group)) {categoryObjects.objSS['IND32SS79'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss11group)) { objSS['IND33SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss11group)) {categoryObjects.objSS['IND33SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss12group)) { objSS['IND33SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss12group)) {categoryObjects.objSS['IND33SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss13group)) { objSS['IND33SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss13group)) {categoryObjects.objSS['IND33SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss14group)) { objSS['IND33SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss14group)) {categoryObjects.objSS['IND33SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss15group)) { objSS['IND33SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss15group)) {categoryObjects.objSS['IND33SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss21group)) { objSS['IND33SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss21group)) {categoryObjects.objSS['IND33SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss22group)) { objSS['IND33SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss22group)) {categoryObjects.objSS['IND33SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss23group)) { objSS['IND33SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss23group)) {categoryObjects.objSS['IND33SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss24group)) { objSS['IND33SS24'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss24group)) {categoryObjects.objSS['IND33SS24'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss25group)) { objSS['IND33SS25'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss25group)) {categoryObjects.objSS['IND33SS25'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss26group)) { objSS['IND33SS26'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss26group)) {categoryObjects.objSS['IND33SS26'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss27group)) { objSS['IND33SS27'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss27group)) {categoryObjects.objSS['IND33SS27'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss28group)) { objSS['IND33SS28'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss28group)) {categoryObjects.objSS['IND33SS28'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss29group)) { objSS['IND33SS29'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss29group)) {categoryObjects.objSS['IND33SS29'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss31group)) { objSS['IND33SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss31group)) {categoryObjects.objSS['IND33SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss32group)) { objSS['IND33SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss32group)) {categoryObjects.objSS['IND33SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss33group)) { objSS['IND33SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss33group)) {categoryObjects.objSS['IND33SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss34group)) { objSS['IND33SS34'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss34group)) {categoryObjects.objSS['IND33SS34'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss35group)) { objSS['IND33SS35'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss35group)) {categoryObjects.objSS['IND33SS35'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss36group)) { objSS['IND33SS36'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss36group)) {categoryObjects.objSS['IND33SS36'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss39group)) { objSS['IND33SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss39group)) {categoryObjects.objSS['IND33SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss41group)) { objSS['IND33SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss41group)) {categoryObjects.objSS['IND33SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss42group)) { objSS['IND33SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss42group)) {categoryObjects.objSS['IND33SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss43group)) { objSS['IND33SS43'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss43group)) {categoryObjects.objSS['IND33SS43'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss44group)) { objSS['IND33SS44'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss44group)) {categoryObjects.objSS['IND33SS44'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss45group)) { objSS['IND33SS45'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss45group)) {categoryObjects.objSS['IND33SS45'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss46group)) { objSS['IND33SS46'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss46group)) {categoryObjects.objSS['IND33SS46'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss51group)) { objSS['IND33SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss51group)) {categoryObjects.objSS['IND33SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss52group)) { objSS['IND33SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss52group)) {categoryObjects.objSS['IND33SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss53group)) { objSS['IND33SS53'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss53group)) {categoryObjects.objSS['IND33SS53'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss59group)) { objSS['IND33SS59'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss59group)) {categoryObjects.objSS['IND33SS59'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss61group)) { objSS['IND33SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss61group)) {categoryObjects.objSS['IND33SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss62group)) { objSS['IND33SS62'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss62group)) {categoryObjects.objSS['IND33SS62'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss63group)) { objSS['IND33SS63'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss63group)) {categoryObjects.objSS['IND33SS63'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss64group)) { objSS['IND33SS64'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss64group)) {categoryObjects.objSS['IND33SS64'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss65group)) { objSS['IND33SS65'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss65group)) {categoryObjects.objSS['IND33SS65'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss66group)) { objSS['IND33SS66'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss66group)) {categoryObjects.objSS['IND33SS66'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss69group)) { objSS['IND33SS69'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss69group)) {categoryObjects.objSS['IND33SS69'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss71group)) { objSS['IND33SS71'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss71group)) {categoryObjects.objSS['IND33SS71'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss72group)) { objSS['IND33SS72'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss72group)) {categoryObjects.objSS['IND33SS72'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss79group)) { objSS['IND33SS79'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss79group)) {categoryObjects.objSS['IND33SS79'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss91group)) { objSS['IND33SS91'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss91group)) {categoryObjects.objSS['IND33SS91'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind33ss99group)) { objSS['IND33SS99'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind33ss99group)) {categoryObjects.objSS['IND33SS99'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss31group)) { objSS['IND42SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss31group)) {categoryObjects.objSS['IND42SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss32group)) { objSS['IND42SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss32group)) {categoryObjects.objSS['IND42SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss33group)) { objSS['IND42SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss33group)) {categoryObjects.objSS['IND42SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss34group)) { objSS['IND42SS34'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss34group)) {categoryObjects.objSS['IND42SS34'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss35group)) { objSS['IND42SS35'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss35group)) {categoryObjects.objSS['IND42SS35'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss36group)) { objSS['IND42SS36'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss36group)) {categoryObjects.objSS['IND42SS36'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss37group)) { objSS['IND42SS37'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss37group)) {categoryObjects.objSS['IND42SS37'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss38group)) { objSS['IND42SS38'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss38group)) {categoryObjects.objSS['IND42SS38'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss39group)) { objSS['IND42SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss39group)) {categoryObjects.objSS['IND42SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss41group)) { objSS['IND42SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss41group)) {categoryObjects.objSS['IND42SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss42group)) { objSS['IND42SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss42group)) {categoryObjects.objSS['IND42SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss43group)) { objSS['IND42SS43'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss43group)) {categoryObjects.objSS['IND42SS43'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss44group)) { objSS['IND42SS44'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss44group)) {categoryObjects.objSS['IND42SS44'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss45group)) { objSS['IND42SS45'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss45group)) {categoryObjects.objSS['IND42SS45'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss46group)) { objSS['IND42SS46'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss46group)) {categoryObjects.objSS['IND42SS46'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss47group)) { objSS['IND42SS47'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss47group)) {categoryObjects.objSS['IND42SS47'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss48group)) { objSS['IND42SS48'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss48group)) {categoryObjects.objSS['IND42SS48'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss49group)) { objSS['IND42SS49'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss49group)) {categoryObjects.objSS['IND42SS49'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind42ss51group)) { objSS['IND42SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind42ss51group)) {categoryObjects.objSS['IND42SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss11group)) { objSS['IND44SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss11group)) {categoryObjects.objSS['IND44SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss12group)) { objSS['IND44SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss12group)) {categoryObjects.objSS['IND44SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss13group)) { objSS['IND44SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss13group)) {categoryObjects.objSS['IND44SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss21group)) { objSS['IND44SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss21group)) {categoryObjects.objSS['IND44SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss22group)) { objSS['IND44SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss22group)) {categoryObjects.objSS['IND44SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss31group)) { objSS['IND44SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss31group)) {categoryObjects.objSS['IND44SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss41group)) { objSS['IND44SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss41group)) {categoryObjects.objSS['IND44SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss42group)) { objSS['IND44SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss42group)) {categoryObjects.objSS['IND44SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss51group)) { objSS['IND44SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss51group)) {categoryObjects.objSS['IND44SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss52group)) { objSS['IND44SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss52group)) {categoryObjects.objSS['IND44SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss53group)) { objSS['IND44SS53'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss53group)) {categoryObjects.objSS['IND44SS53'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss61group)) { objSS['IND44SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss61group)) {categoryObjects.objSS['IND44SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss71group)) { objSS['IND44SS71'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss71group)) {categoryObjects.objSS['IND44SS71'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss81group)) { objSS['IND44SS81'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss81group)) {categoryObjects.objSS['IND44SS81'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss82group)) { objSS['IND44SS82'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss82group)) {categoryObjects.objSS['IND44SS82'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind44ss83group)) { objSS['IND44SS83'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind44ss83group)) {categoryObjects.objSS['IND44SS83'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss11group)) { objSS['IND45SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss11group)) {categoryObjects.objSS['IND45SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss12group)) { objSS['IND45SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss12group)) {categoryObjects.objSS['IND45SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss22group)) { objSS['IND45SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss22group)) {categoryObjects.objSS['IND45SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss23group)) { objSS['IND45SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss23group)) {categoryObjects.objSS['IND45SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss31group)) { objSS['IND45SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss31group)) {categoryObjects.objSS['IND45SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss32group)) { objSS['IND45SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss32group)) {categoryObjects.objSS['IND45SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss33group)) { objSS['IND45SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss33group)) {categoryObjects.objSS['IND45SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss39group)) { objSS['IND45SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss39group)) {categoryObjects.objSS['IND45SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss41group)) { objSS['IND45SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss41group)) {categoryObjects.objSS['IND45SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss42group)) { objSS['IND45SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss42group)) {categoryObjects.objSS['IND45SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind45ss43group)) { objSS['IND45SS43'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind45ss43group)) {categoryObjects.objSS['IND45SS43'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss11group)) { objSS['IND48SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss11group)) {categoryObjects.objSS['IND48SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss12group)) { objSS['IND48SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss12group)) {categoryObjects.objSS['IND48SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss21group)) { objSS['IND48SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss21group)) {categoryObjects.objSS['IND48SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss31group)) { objSS['IND48SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss31group)) {categoryObjects.objSS['IND48SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss32group)) { objSS['IND48SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss32group)) {categoryObjects.objSS['IND48SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss41group)) { objSS['IND48SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss41group)) {categoryObjects.objSS['IND48SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss42group)) { objSS['IND48SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss42group)) {categoryObjects.objSS['IND48SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss51group)) { objSS['IND48SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss51group)) {categoryObjects.objSS['IND48SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss52group)) { objSS['IND48SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss52group)) {categoryObjects.objSS['IND48SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss53group)) { objSS['IND48SS53'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss53group)) {categoryObjects.objSS['IND48SS53'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss54group)) { objSS['IND48SS54'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss54group)) {categoryObjects.objSS['IND48SS54'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss55group)) { objSS['IND48SS55'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss55group)) {categoryObjects.objSS['IND48SS55'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss59group)) { objSS['IND48SS59'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss59group)) {categoryObjects.objSS['IND48SS59'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss61group)) { objSS['IND48SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss61group)) {categoryObjects.objSS['IND48SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss62group)) { objSS['IND48SS62'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss62group)) {categoryObjects.objSS['IND48SS62'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss69group)) { objSS['IND48SS69'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss69group)) {categoryObjects.objSS['IND48SS69'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss71group)) { objSS['IND48SS71'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss71group)) {categoryObjects.objSS['IND48SS71'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss72group)) { objSS['IND48SS72'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss72group)) {categoryObjects.objSS['IND48SS72'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss79group)) { objSS['IND48SS79'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss79group)) {categoryObjects.objSS['IND48SS79'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss81group)) { objSS['IND48SS81'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss81group)) {categoryObjects.objSS['IND48SS81'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss82group)) { objSS['IND48SS82'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss82group)) {categoryObjects.objSS['IND48SS82'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss83group)) { objSS['IND48SS83'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss83group)) {categoryObjects.objSS['IND48SS83'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss84group)) { objSS['IND48SS84'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss84group)) {categoryObjects.objSS['IND48SS84'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss85group)) { objSS['IND48SS85'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss85group)) {categoryObjects.objSS['IND48SS85'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind48ss89group)) { objSS['IND48SS89'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind48ss89group)) {categoryObjects.objSS['IND48SS89'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind49ss11group)) { objSS['IND49SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind49ss11group)) {categoryObjects.objSS['IND49SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind49ss21group)) { objSS['IND49SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind49ss21group)) {categoryObjects.objSS['IND49SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind49ss22group)) { objSS['IND49SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind49ss22group)) {categoryObjects.objSS['IND49SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind49ss31group)) { objSS['IND49SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind49ss31group)) {categoryObjects.objSS['IND49SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss11group)) { objSS['IND51SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss11group)) {categoryObjects.objSS['IND51SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss12group)) { objSS['IND51SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss12group)) {categoryObjects.objSS['IND51SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss21group)) { objSS['IND51SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss21group)) {categoryObjects.objSS['IND51SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss22group)) { objSS['IND51SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss22group)) {categoryObjects.objSS['IND51SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss51group)) { objSS['IND51SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss51group)) {categoryObjects.objSS['IND51SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss52group)) { objSS['IND51SS52'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss52group)) {categoryObjects.objSS['IND51SS52'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss73group)) { objSS['IND51SS73'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss73group)) {categoryObjects.objSS['IND51SS73'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss74group)) { objSS['IND51SS74'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss74group)) {categoryObjects.objSS['IND51SS74'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss79group)) { objSS['IND51SS79'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss79group)) {categoryObjects.objSS['IND51SS79'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss82group)) { objSS['IND51SS82'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss82group)) {categoryObjects.objSS['IND51SS82'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind51ss91group)) { objSS['IND51SS91'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind51ss91group)) {categoryObjects.objSS['IND51SS91'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss11group)) { objSS['IND52SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss11group)) {categoryObjects.objSS['IND52SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss21group)) { objSS['IND52SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss21group)) {categoryObjects.objSS['IND52SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss22group)) { objSS['IND52SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss22group)) {categoryObjects.objSS['IND52SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss23group)) { objSS['IND52SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss23group)) {categoryObjects.objSS['IND52SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss31group)) { objSS['IND52SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss31group)) {categoryObjects.objSS['IND52SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss32group)) { objSS['IND52SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss32group)) {categoryObjects.objSS['IND52SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss39group)) { objSS['IND52SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss39group)) {categoryObjects.objSS['IND52SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss41group)) { objSS['IND52SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss41group)) {categoryObjects.objSS['IND52SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss42group)) { objSS['IND52SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss42group)) {categoryObjects.objSS['IND52SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss51group)) { objSS['IND52SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss51group)) {categoryObjects.objSS['IND52SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind52ss59group)) { objSS['IND52SS59'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind52ss59group)) {categoryObjects.objSS['IND52SS59'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss11group)) { objSS['IND53SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss11group)) {categoryObjects.objSS['IND53SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss12group)) { objSS['IND53SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss12group)) {categoryObjects.objSS['IND53SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss13group)) { objSS['IND53SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss13group)) {categoryObjects.objSS['IND53SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss21group)) { objSS['IND53SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss21group)) {categoryObjects.objSS['IND53SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss22group)) { objSS['IND53SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss22group)) {categoryObjects.objSS['IND53SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss23group)) { objSS['IND53SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss23group)) {categoryObjects.objSS['IND53SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss24group)) { objSS['IND53SS24'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss24group)) {categoryObjects.objSS['IND53SS24'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind53ss31group)) { objSS['IND53SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind53ss31group)) {categoryObjects.objSS['IND53SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss11group)) { objSS['IND54SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss11group)) {categoryObjects.objSS['IND54SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss12group)) { objSS['IND54SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss12group)) {categoryObjects.objSS['IND54SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss13group)) { objSS['IND54SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss13group)) {categoryObjects.objSS['IND54SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss14group)) { objSS['IND54SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss14group)) {categoryObjects.objSS['IND54SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss15group)) { objSS['IND54SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss15group)) {categoryObjects.objSS['IND54SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss16group)) { objSS['IND54SS16'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss16group)) {categoryObjects.objSS['IND54SS16'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss17group)) { objSS['IND54SS17'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss17group)) {categoryObjects.objSS['IND54SS17'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss18group)) { objSS['IND54SS18'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss18group)) {categoryObjects.objSS['IND54SS18'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind54ss19group)) { objSS['IND54SS19'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind54ss19group)) {categoryObjects.objSS['IND54SS19'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind55ss11group)) { objSS['IND55SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind55ss11group)) {categoryObjects.objSS['IND55SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss11group)) { objSS['IND56SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss11group)) {categoryObjects.objSS['IND56SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss12group)) { objSS['IND56SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss12group)) {categoryObjects.objSS['IND56SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss13group)) { objSS['IND56SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss13group)) {categoryObjects.objSS['IND56SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss14group)) { objSS['IND56SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss14group)) {categoryObjects.objSS['IND56SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss15group)) { objSS['IND56SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss15group)) {categoryObjects.objSS['IND56SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss16group)) { objSS['IND56SS16'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss16group)) {categoryObjects.objSS['IND56SS16'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss17group)) { objSS['IND56SS17'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss17group)) {categoryObjects.objSS['IND56SS17'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss19group)) { objSS['IND56SS19'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss19group)) {categoryObjects.objSS['IND56SS19'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss21group)) { objSS['IND56SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss21group)) {categoryObjects.objSS['IND56SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss22group)) { objSS['IND56SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss22group)) {categoryObjects.objSS['IND56SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind56ss29group)) { objSS['IND56SS29'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind56ss29group)) {categoryObjects.objSS['IND56SS29'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss11group)) { objSS['IND61SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss11group)) {categoryObjects.objSS['IND61SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss12group)) { objSS['IND61SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss12group)) {categoryObjects.objSS['IND61SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss13group)) { objSS['IND61SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss13group)) {categoryObjects.objSS['IND61SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss14group)) { objSS['IND61SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss14group)) {categoryObjects.objSS['IND61SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss15group)) { objSS['IND61SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss15group)) {categoryObjects.objSS['IND61SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss16group)) { objSS['IND61SS16'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss16group)) {categoryObjects.objSS['IND61SS16'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind61ss17group)) { objSS['IND61SS17'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind61ss17group)) {categoryObjects.objSS['IND61SS17'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss11group)) { objSS['IND62SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss11group)) {categoryObjects.objSS['IND62SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss12group)) { objSS['IND62SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss12group)) {categoryObjects.objSS['IND62SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss13group)) { objSS['IND62SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss13group)) {categoryObjects.objSS['IND62SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss14group)) { objSS['IND62SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss14group)) {categoryObjects.objSS['IND62SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss15group)) { objSS['IND62SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss15group)) {categoryObjects.objSS['IND62SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss16group)) { objSS['IND62SS16'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss16group)) {categoryObjects.objSS['IND62SS16'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss19group)) { objSS['IND62SS19'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss19group)) {categoryObjects.objSS['IND62SS19'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss21group)) { objSS['IND62SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss21group)) {categoryObjects.objSS['IND62SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss22group)) { objSS['IND62SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss22group)) {categoryObjects.objSS['IND62SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss23group)) { objSS['IND62SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss23group)) {categoryObjects.objSS['IND62SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss31group)) { objSS['IND62SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss31group)) {categoryObjects.objSS['IND62SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss32group)) { objSS['IND62SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss32group)) {categoryObjects.objSS['IND62SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss33group)) { objSS['IND62SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss33group)) {categoryObjects.objSS['IND62SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss39group)) { objSS['IND62SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss39group)) {categoryObjects.objSS['IND62SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss41group)) { objSS['IND62SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss41group)) {categoryObjects.objSS['IND62SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss42group)) { objSS['IND62SS42'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss42group)) {categoryObjects.objSS['IND62SS42'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss43group)) { objSS['IND62SS43'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss43group)) {categoryObjects.objSS['IND62SS43'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind62ss44group)) { objSS['IND62SS44'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind62ss44group)) {categoryObjects.objSS['IND62SS44'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss11group)) { objSS['IND71SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss11group)) {categoryObjects.objSS['IND71SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss12group)) { objSS['IND71SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss12group)) {categoryObjects.objSS['IND71SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss13group)) { objSS['IND71SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss13group)) {categoryObjects.objSS['IND71SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss14group)) { objSS['IND71SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss14group)) {categoryObjects.objSS['IND71SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss15group)) { objSS['IND71SS15'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss15group)) {categoryObjects.objSS['IND71SS15'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss21group)) { objSS['IND71SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss21group)) {categoryObjects.objSS['IND71SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss31group)) { objSS['IND71SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss31group)) {categoryObjects.objSS['IND71SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss32group)) { objSS['IND71SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss32group)) {categoryObjects.objSS['IND71SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind71ss39group)) { objSS['IND71SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind71ss39group)) {categoryObjects.objSS['IND71SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind72ss11group)) { objSS['IND72SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind72ss11group)) {categoryObjects.objSS['IND72SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind72ss12group)) { objSS['IND72SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind72ss12group)) {categoryObjects.objSS['IND72SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind72ss13group)) { objSS['IND72SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind72ss13group)) {categoryObjects.objSS['IND72SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind72ss23group)) { objSS['IND72SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind72ss23group)) {categoryObjects.objSS['IND72SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind72ss24group)) { objSS['IND72SS24'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind72ss24group)) {categoryObjects.objSS['IND72SS24'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind72ss25group)) { objSS['IND72SS25'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind72ss25group)) {categoryObjects.objSS['IND72SS25'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss11group)) { objSS['IND81SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss11group)) {categoryObjects.objSS['IND81SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss12group)) { objSS['IND81SS12'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss12group)) {categoryObjects.objSS['IND81SS12'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss13group)) { objSS['IND81SS13'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss13group)) {categoryObjects.objSS['IND81SS13'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss14group)) { objSS['IND81SS14'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss14group)) {categoryObjects.objSS['IND81SS14'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss21group)) { objSS['IND81SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss21group)) {categoryObjects.objSS['IND81SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss22group)) { objSS['IND81SS22'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss22group)) {categoryObjects.objSS['IND81SS22'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss23group)) { objSS['IND81SS23'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss23group)) {categoryObjects.objSS['IND81SS23'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss29group)) { objSS['IND81SS29'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss29group)) {categoryObjects.objSS['IND81SS29'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss31group)) { objSS['IND81SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss31group)) {categoryObjects.objSS['IND81SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss32group)) { objSS['IND81SS32'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss32group)) {categoryObjects.objSS['IND81SS32'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss33group)) { objSS['IND81SS33'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss33group)) {categoryObjects.objSS['IND81SS33'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss34group)) { objSS['IND81SS34'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss34group)) {categoryObjects.objSS['IND81SS34'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss39group)) { objSS['IND81SS39'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss39group)) {categoryObjects.objSS['IND81SS39'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind81ss41group)) { objSS['IND81SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind81ss41group)) {categoryObjects.objSS['IND81SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss11group)) { objSS['IND92SS11'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss11group)) {categoryObjects.objSS['IND92SS11'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss21group)) { objSS['IND92SS21'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss21group)) {categoryObjects.objSS['IND92SS21'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss31group)) { objSS['IND92SS31'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss31group)) {categoryObjects.objSS['IND92SS31'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss41group)) { objSS['IND92SS41'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss41group)) {categoryObjects.objSS['IND92SS41'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss51group)) { objSS['IND92SS51'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss51group)) {categoryObjects.objSS['IND92SS51'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss61group)) { objSS['IND92SS61'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss61group)) {categoryObjects.objSS['IND92SS61'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss71group)) { objSS['IND92SS71'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss71group)) {categoryObjects.objSS['IND92SS71'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind92ss81group)) { objSS['IND92SS81'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind92ss81group)) {categoryObjects.objSS['IND92SS81'].forEach(marker => content.removeLayer(marker))
         }
-       if (!myMap.hasLayer(ind99ss00group)) { objSS['IND99SS00'].forEach(marker => content.removeLayer(marker))
+       if (!myMap.hasLayer(ind99ss00group)) {categoryObjects.objSS['IND99SS00'].forEach(marker => content.removeLayer(marker))
         }   
-        Object.keys(objpts).forEach(key => {
+        Object.keys(categoryObjects.objpts).forEach(key => {
           if (!myMap.hasLayer(eval(`group${key}`))) {
-            objpts[key].forEach(marker => content.removeLayer(marker));
+            categoryObjects.objpts[key].forEach(marker => content.removeLayer(marker));
           }
         })
-        Object.keys(objLR).forEach(key => {
+        Object.keys(categoryObjects.objLR).forEach(key => {
           if (!myMap.hasLayer(eval(`${key}group`))) {
-            objLR[key].forEach(marker => content.removeLayer(marker));
+            categoryObjects.objLR[key].forEach(marker => content.removeLayer(marker));
           }
         })
-        Object.keys(objBT).forEach(key => {
+        Object.keys(categoryObjects.objBT).forEach(key => {
           if (!myMap.hasLayer(eval(`${key}group`))) {
-            objBT[key].forEach(marker => content.removeLayer(marker));
+            categoryObjects.objBT[key].forEach(marker => content.removeLayer(marker));
           }
         })
-        Object.keys(objJR).forEach(key => {
+        Object.keys(categoryObjects.objJR).forEach(key => {
           if (!myMap.hasLayer(eval(`${key}group`))) {
-            objJR[key].forEach(marker => content.removeLayer(marker));
+            categoryObjects.objJR[key].forEach(marker => content.removeLayer(marker));
           }
         })
         Object.keys(objBA).forEach(key => {
           if (!myMap.hasLayer(eval(`${key}group`))) {
-            objBA[key].forEach(marker => content.removeLayer(marker));
+            categoryObjects.objBA[key].forEach(marker => content.removeLayer(marker));
           }
         })
         if (!myMap.hasLayer(PPPgroup)) {
-            objPM['PPP'].forEach(marker => content.removeLayer(marker))
+          categoryObjects.objPM['PPP'].forEach(marker => content.removeLayer(marker))
         }
         if (!myMap.hasLayer(PPSgroup)) {
-            objPM['PPS'].forEach(marker => content.removeLayer(marker))
+          categoryObjects.objPM['PPS'].forEach(marker => content.removeLayer(marker))
         }
         })
   
@@ -3435,322 +3435,6 @@ $("#mybutton2").click(function (event) {
 	let ind92ss71group = new L.layerGroup();
 	let ind92ss81group = new L.layerGroup();
   let ind99ss00group = new L.layerGroup();
-
-let objSS = {
-'IND00SS00': [],
-'IND11SS11': [],
-'IND11SS12': [],
-'IND11SS13': [],
-'IND11SS14': [],
-'IND11SS19': [],
-'IND11SS21': [],
-'IND11SS22': [],
-'IND11SS23': [],
-'IND11SS24': [],
-'IND11SS25': [],
-'IND11SS29': [],
-'IND11SS31': [],
-'IND11SS32': [],
-'IND11SS33': [],
-'IND11SS41': [],
-'IND11SS42': [],
-'IND11SS51': [],
-'IND11SS52': [],
-'IND11SS53': [],
-'IND21SS11': [],
-'IND21SS21': [],
-'IND21SS22': [],
-'IND21SS23': [],
-'IND21SS31': [],
-'IND22SS11': [],
-'IND22SS12': [],
-'IND22SS13': [],
-'IND23SS61': [],
-'IND23SS62': [],
-'IND23SS71': [],
-'IND23SS72': [],
-'IND23SS73': [],
-'IND23SS79': [],
-'IND23SS81': [],
-'IND23SS82': [],
-'IND23SS83': [],
-'IND23SS89': [],
-'IND31SS11': [],
-'IND31SS12': [],
-'IND31SS13': [],
-'IND31SS14': [],
-'IND31SS15': [],
-'IND31SS16': [],
-'IND31SS17': [],
-'IND31SS18': [],
-'IND31SS19': [],
-'IND31SS21': [],
-'IND31SS22': [],
-'IND31SS31': [],
-'IND31SS32': [],
-'IND31SS33': [],
-'IND31SS41': [],
-'IND31SS49': [],
-'IND31SS51': [],
-'IND31SS52': [],
-'IND31SS59': [],
-'IND31SS61': [],
-'IND31SS62': [],
-'IND31SS69': [],
-'IND32SS11': [],
-'IND32SS12': [],
-'IND32SS19': [],
-'IND32SS21': [],
-'IND32SS22': [],
-'IND32SS31': [],
-'IND32SS41': [],
-'IND32SS51': [],
-'IND32SS52': [],
-'IND32SS53': [],
-'IND32SS54': [],
-'IND32SS55': [],
-'IND32SS56': [],
-'IND32SS59': [],
-'IND32SS61': [],
-'IND32SS62': [],
-'IND32SS71': [],
-'IND32SS72': [],
-'IND32SS73': [],
-'IND32SS74': [],
-'IND32SS79': [],
-'IND33SS11': [],
-'IND33SS12': [],
-'IND33SS13': [],
-'IND33SS14': [],
-'IND33SS15': [],
-'IND33SS21': [],
-'IND33SS22': [],
-'IND33SS23': [],
-'IND33SS24': [],
-'IND33SS25': [],
-'IND33SS26': [],
-'IND33SS27': [],
-'IND33SS28': [],
-'IND33SS29': [],
-'IND33SS31': [],
-'IND33SS32': [],
-'IND33SS33': [],
-'IND33SS34': [],
-'IND33SS35': [],
-'IND33SS36': [],
-'IND33SS39': [],
-'IND33SS41': [],
-'IND33SS42': [],
-'IND33SS43': [],
-'IND33SS44': [],
-'IND33SS45': [],
-'IND33SS46': [],
-'IND33SS51': [],
-'IND33SS52': [],
-'IND33SS53': [],
-'IND33SS59': [],
-'IND33SS61': [],
-'IND33SS62': [],
-'IND33SS63': [],
-'IND33SS64': [],
-'IND33SS65': [],
-'IND33SS66': [],
-'IND33SS69': [],
-'IND33SS71': [],
-'IND33SS72': [],
-'IND33SS79': [],
-'IND33SS91': [],
-'IND33SS99': [],
-'IND42SS31': [],
-'IND42SS32': [],
-'IND42SS33': [],
-'IND42SS34': [],
-'IND42SS35': [],
-'IND42SS36': [],
-'IND42SS37': [],
-'IND42SS38': [],
-'IND42SS39': [],
-'IND42SS41': [],
-'IND42SS42': [],
-'IND42SS43': [],
-'IND42SS44': [],
-'IND42SS45': [],
-'IND42SS46': [],
-'IND42SS47': [],
-'IND42SS48': [],
-'IND42SS49': [],
-'IND42SS51': [],
-'IND44SS11': [],
-'IND44SS12': [],
-'IND44SS13': [],
-'IND44SS21': [],
-'IND44SS22': [],
-'IND44SS31': [],
-'IND44SS41': [],
-'IND44SS42': [],
-'IND44SS51': [],
-'IND44SS52': [],
-'IND44SS53': [],
-'IND44SS61': [],
-'IND44SS71': [],
-'IND44SS81': [],
-'IND44SS82': [],
-'IND44SS83': [],
-'IND45SS11': [],
-'IND45SS12': [],
-'IND45SS22': [],
-'IND45SS23': [],
-'IND45SS31': [],
-'IND45SS32': [],
-'IND45SS33': [],
-'IND45SS39': [],
-'IND45SS41': [],
-'IND45SS42': [],
-'IND45SS43': [],
-'IND48SS11': [],
-'IND48SS12': [],
-'IND48SS21': [],
-'IND48SS31': [],
-'IND48SS32': [],
-'IND48SS41': [],
-'IND48SS42': [],
-'IND48SS51': [],
-'IND48SS52': [],
-'IND48SS53': [],
-'IND48SS54': [],
-'IND48SS55': [],
-'IND48SS59': [],
-'IND48SS61': [],
-'IND48SS62': [],
-'IND48SS69': [],
-'IND48SS71': [],
-'IND48SS72': [],
-'IND48SS79': [],
-'IND48SS81': [],
-'IND48SS82': [],
-'IND48SS83': [],
-'IND48SS84': [],
-'IND48SS85': [],
-'IND48SS89': [],
-'IND49SS11': [],
-'IND49SS21': [],
-'IND49SS22': [],
-'IND49SS31': [],
-'IND51SS11': [],
-'IND51SS12': [],
-'IND51SS21': [],
-'IND51SS22': [],
-'IND51SS51': [],
-'IND51SS52': [],
-'IND51SS73': [],
-'IND51SS74': [],
-'IND51SS79': [],
-'IND51SS82': [],
-'IND51SS91': [],
-'IND52SS11': [],
-'IND52SS21': [],
-'IND52SS22': [],
-'IND52SS23': [],
-'IND52SS31': [],
-'IND52SS32': [],
-'IND52SS39': [],
-'IND52SS41': [],
-'IND52SS42': [],
-'IND52SS51': [],
-'IND52SS59': [],
-'IND53SS11': [],
-'IND53SS12': [],
-'IND53SS13': [],
-'IND53SS21': [],
-'IND53SS22': [],
-'IND53SS23': [],
-'IND53SS24': [],
-'IND53SS31': [],
-'IND54SS11': [],
-'IND54SS12': [],
-'IND54SS13': [],
-'IND54SS14': [],
-'IND54SS15': [],
-'IND54SS16': [],
-'IND54SS17': [],
-'IND54SS18': [],
-'IND54SS19': [],
-'IND55SS11': [],
-'IND56SS11': [],
-'IND56SS12': [],
-'IND56SS13': [],
-'IND56SS14': [],
-'IND56SS15': [],
-'IND56SS16': [],
-'IND56SS17': [],
-'IND56SS19': [],
-'IND56SS21': [],
-'IND56SS22': [],
-'IND56SS29': [],
-'IND61SS11': [],
-'IND61SS12': [],
-'IND61SS13': [],
-'IND61SS14': [],
-'IND61SS15': [],
-'IND61SS16': [],
-'IND61SS17': [],
-'IND62SS11': [],
-'IND62SS12': [],
-'IND62SS13': [],
-'IND62SS14': [],
-'IND62SS15': [],
-'IND62SS16': [],
-'IND62SS19': [],
-'IND62SS21': [],
-'IND62SS22': [],
-'IND62SS23': [],
-'IND62SS31': [],
-'IND62SS32': [],
-'IND62SS33': [],
-'IND62SS39': [],
-'IND62SS41': [],
-'IND62SS42': [],
-'IND62SS43': [],
-'IND62SS44': [],
-'IND71SS11': [],
-'IND71SS12': [],
-'IND71SS13': [],
-'IND71SS14': [],
-'IND71SS15': [],
-'IND71SS21': [],
-'IND71SS31': [],
-'IND71SS32': [],
-'IND71SS39': [],
-'IND72SS11': [],
-'IND72SS12': [],
-'IND72SS13': [],
-'IND72SS23': [],
-'IND72SS24': [],
-'IND72SS25': [],
-'IND81SS11': [],
-'IND81SS12': [],
-'IND81SS13': [],
-'IND81SS14': [],
-'IND81SS21': [],
-'IND81SS22': [],
-'IND81SS23': [],
-'IND81SS29': [],
-'IND81SS31': [],
-'IND81SS32': [],
-'IND81SS33': [],
-'IND81SS34': [],
-'IND81SS39': [],
-'IND81SS41': [],
-'IND92SS11': [],
-'IND92SS21': [],
-'IND92SS31': [],
-'IND92SS41': [],
-'IND92SS51': [],
-'IND92SS61': [],
-'IND92SS71': [],
-'IND92SS81': [],
-'IND99SS00': []
-}
   
 
 let LR1group = new L.layerGroup();
@@ -3811,103 +3495,69 @@ let group17 = new L.layerGroup();
 let group48 = new L.layerGroup();
 
 
-// const makeFoo = async (bounds) => {
-//   // get points for `bounds` from the server
-//   const url = `server/?bounds`;
-//   const response = await fetch(url);
 
-//   if (response.ok) {
-//       if (LAYERS.foo && map.hasLayer(LAYERS.foo)) {
-//         map.removeLayer(LAYERS.foo);
-//       }
-//       LAYERS.foo = L.markerClusterGroup();
-//       const records = await response.json();
-//       records.forEach((r) => LAYERS.foo.addLayer(L.marker(new L.LatLng(r.lat, r.lng))));
-//       map.addLayer(LAYERS.foo);
-//   }
-// }
-// var route1 = fs.createReadStream('/dev/random')
-// var route1Layer = L.geoJSON("../data/state_data/geo/state_agg/51/51pt.json");
-// var route2Layer = L.geoJSON(route2);
-// var route3Layer = L.geoJSON(route3);
-// var route4Layer = L.geoJSON(route4);
-// var route5Layer = L.geoJSON(route5);
-
-// group = new L.FeatureGroup();
-// group.addLayer(route1Layer); //pump
-// group.addLayer(route2Layer);
-// group.addLayer(route3Layer);
-// group.addLayer(route4Layer);
-// group.addLayer(route5Layer);
-// map.addLayer(group);
-
-
-
-// VAgroup, MDgroup, ILgroup
-let objpts = { '51' : [], 
-  '48' : [], 
-  '17' : [],
-  '24' : [] }
-
-let objPM = {
-  'PPP': [],
-  'PPS': []
-}
-let objLR = { 
-  'LR1' : [], 
-  'LR2' : [],
-  'LR3' : [],
-  'LR4' : [],
-  'LR5' : [] }
-
-
-let objBA = {
-  'BA1': [],
-  'BA2': [],
-  'BA3': [],
-  'BA4': [],
-  'BA5': []
-}
-
-let objJR = {
-  'JR1': [],
-  'JR2': [],
-  'JR3': [],
-  'JR4': [],
-  'JR5': [],
-  'JR6': [],
-  'JR7': [],
-  'JR8': []
-}
-
-let objBT = {
-  'BT01': [],
-  'BT02': [],
-  'BT03': [],
-  'BT04': [],
-  'BT05': [],
-  'BT06': [],
-  'BT07': [],
-  'BT08': [],
-  'BT09': [],
-  'BT10': [],
-  'BT11': [],
-  'BT12': [],
-  'BT13': [],
-  'BT14': [],
-  'BT15': [],
-  'BT16': [],
-  'BT17': [],
-  'BT18': [],
-  'BT19': [],
-  'BT20': [],
-  'BT21': [],
-  'BT22': [],
-  'BT23': [],
-  'BT24': [],
-  'BT25': [],
-  'BT26': [],
-}
+// Data structures for points and categories
+const categoryObjects = {
+  objpts: { '51': [], '48': [], '17': [], '24': [] },
+  objPM: { 'PPP': [], 'PPS': [] },
+  objLR: { 'LR1': [], 'LR2': [], 'LR3': [], 'LR4': [], 'LR5': [] },
+  objBA: { 'BA1': [], 'BA2': [], 'BA3': [], 'BA4': [], 'BA5': [] },
+  objJR: { 'JR1': [], 'JR2': [], 'JR3': [], 'JR4': [], 'JR5': [], 'JR6': [], 'JR7': [], 'JR8': [] },
+  objBT: [...Array(27).keys()].reduce((acc, cur) => ({ ...acc, ['BT' + String(cur).padStart(2, '0')]: [] }), {}),
+  objSS: { 'IND00SS00': [],'IND11SS11': [], 'IND11SS12': [], 'IND11SS13': [],'IND11SS14': [],
+  'IND11SS19': [],'IND11SS21': [],'IND11SS22': [],'IND11SS23': [],'IND11SS24': [],'IND11SS25': [],
+  'IND11SS29': [],'IND11SS31': [],'IND11SS32': [],'IND11SS33': [],'IND11SS41': [],'IND11SS42': [],
+  'IND11SS51': [],'IND11SS52': [],'IND11SS53': [],'IND21SS11': [],'IND21SS21': [],'IND21SS22': [],
+  'IND21SS23': [],'IND21SS31': [],'IND22SS11': [],'IND22SS12': [],'IND22SS13': [],'IND23SS61': [],
+  'IND23SS62': [],'IND23SS71': [],'IND23SS72': [],'IND23SS73': [],'IND23SS79': [],'IND23SS81': [],
+  'IND23SS82': [],'IND23SS83': [],'IND23SS89': [],'IND31SS11': [],'IND31SS12': [],'IND31SS13': [],
+  'IND31SS14': [],'IND31SS15': [],'IND31SS16': [],'IND31SS17': [],'IND31SS18': [],'IND31SS19': [],
+  'IND31SS21': [],'IND31SS22': [],'IND31SS31': [],'IND31SS32': [],'IND31SS33': [],'IND31SS41': [],
+  'IND31SS49': [],'IND31SS51': [],'IND31SS52': [],'IND31SS59': [],'IND31SS61': [],'IND31SS62': [],
+  'IND31SS69': [],'IND32SS11': [],'IND32SS12': [],'IND32SS19': [],'IND32SS21': [],'IND32SS22': [],
+  'IND32SS31': [],'IND32SS41': [],'IND32SS51': [],'IND32SS52': [],'IND32SS53': [],'IND32SS54': [],
+  'IND32SS55': [],'IND32SS56': [],'IND32SS59': [],'IND32SS61': [],'IND32SS62': [],'IND32SS71': [],
+  'IND32SS72': [],'IND32SS73': [],'IND32SS74': [],'IND32SS79': [],'IND33SS11': [],'IND33SS12': [],
+  'IND33SS13': [],'IND33SS14': [],'IND33SS15': [],'IND33SS21': [],'IND33SS22': [],'IND33SS23': [],
+  'IND33SS24': [],'IND33SS25': [],'IND33SS26': [],'IND33SS27': [],'IND33SS28': [],'IND33SS29': [],
+  'IND33SS31': [],'IND33SS32': [],'IND33SS33': [],'IND33SS34': [],'IND33SS35': [],'IND33SS36': [],
+  'IND33SS39': [],'IND33SS41': [],'IND33SS42': [],'IND33SS43': [],'IND33SS44': [],'IND33SS45': [],
+  'IND33SS46': [],'IND33SS51': [],'IND33SS52': [],'IND33SS53': [],'IND33SS59': [],'IND33SS61': [],
+  'IND33SS62': [],'IND33SS63': [],'IND33SS64': [],'IND33SS65': [],'IND33SS66': [],'IND33SS69': [],
+  'IND33SS71': [],'IND33SS72': [],'IND33SS79': [],'IND33SS91': [],'IND33SS99': [],'IND42SS31': [],
+  'IND42SS32': [],'IND42SS33': [],'IND42SS34': [],'IND42SS35': [],'IND42SS36': [],'IND42SS37': [],
+  'IND42SS38': [],'IND42SS39': [],'IND42SS41': [],'IND42SS42': [],'IND42SS43': [],'IND42SS44': [],
+  'IND42SS45': [],'IND42SS46': [],'IND42SS47': [],'IND42SS48': [],'IND42SS49': [],'IND42SS51': [],
+  'IND44SS11': [],'IND44SS12': [],'IND44SS13': [],'IND44SS21': [],'IND44SS22': [],'IND44SS31': [],
+  'IND44SS41': [],'IND44SS42': [],'IND44SS51': [],'IND44SS52': [],'IND44SS53': [],'IND44SS61': [],
+  'IND44SS71': [],'IND44SS81': [],'IND44SS82': [],'IND44SS83': [],'IND45SS11': [],'IND45SS12': [],
+  'IND45SS22': [],'IND45SS23': [],'IND45SS31': [],'IND45SS32': [],'IND45SS33': [],'IND45SS39': [],
+  'IND45SS41': [],'IND45SS42': [],'IND45SS43': [],'IND48SS11': [],'IND48SS12': [],'IND48SS21': [],
+  'IND48SS31': [],'IND48SS32': [],'IND48SS41': [],'IND48SS42': [],'IND48SS51': [],'IND48SS52': [],
+  'IND48SS53': [],'IND48SS54': [],'IND48SS55': [],'IND48SS59': [],'IND48SS61': [],'IND48SS62': [],
+  'IND48SS69': [],'IND48SS71': [],'IND48SS72': [],'IND48SS79': [],'IND48SS81': [],'IND48SS82': [],
+  'IND48SS83': [],'IND48SS84': [],'IND48SS85': [],'IND48SS89': [],'IND49SS11': [],'IND49SS21': [],
+  'IND49SS22': [],'IND49SS31': [],'IND51SS11': [],'IND51SS12': [],'IND51SS21': [],'IND51SS22': [],
+  'IND51SS51': [],'IND51SS52': [],'IND51SS73': [],'IND51SS74': [],'IND51SS79': [],'IND51SS82': [],
+  'IND51SS91': [],'IND52SS11': [],'IND52SS21': [],'IND52SS22': [],'IND52SS23': [],'IND52SS31': [],
+  'IND52SS32': [],'IND52SS39': [],'IND52SS41': [],'IND52SS42': [],'IND52SS51': [],'IND52SS59': [],
+  'IND53SS11': [],'IND53SS12': [],'IND53SS13': [],'IND53SS21': [],'IND53SS22': [],'IND53SS23': [],
+  'IND53SS24': [],'IND53SS31': [],'IND54SS11': [],'IND54SS12': [],'IND54SS13': [],'IND54SS14': [],
+  'IND54SS15': [],'IND54SS16': [],'IND54SS17': [],'IND54SS18': [],'IND54SS19': [],'IND55SS11': [],
+  'IND56SS11': [],'IND56SS12': [],'IND56SS13': [],'IND56SS14': [],'IND56SS15': [],'IND56SS16': [],
+  'IND56SS17': [],'IND56SS19': [],'IND56SS21': [],'IND56SS22': [],'IND56SS29': [],'IND61SS11': [],
+  'IND61SS12': [],'IND61SS13': [],'IND61SS14': [],'IND61SS15': [],'IND61SS16': [],'IND61SS17': [],
+  'IND62SS11': [],'IND62SS12': [],'IND62SS13': [],'IND62SS14': [],'IND62SS15': [],'IND62SS16': [],
+  'IND62SS19': [],'IND62SS21': [],'IND62SS22': [],'IND62SS23': [],'IND62SS31': [],'IND62SS32': [],
+  'IND62SS33': [],'IND62SS39': [],'IND62SS41': [],'IND62SS42': [],'IND62SS43': [],'IND62SS44': [],
+  'IND71SS11': [],'IND71SS12': [],'IND71SS13': [],'IND71SS14': [],'IND71SS15': [],'IND71SS21': [],
+  'IND71SS31': [],'IND71SS32': [],'IND71SS39': [],'IND72SS11': [],'IND72SS12': [],'IND72SS13': [],
+  'IND72SS23': [],'IND72SS24': [],'IND72SS25': [],'IND81SS11': [],'IND81SS12': [],'IND81SS13': [],
+  'IND81SS14': [],'IND81SS21': [],'IND81SS22': [],'IND81SS23': [],'IND81SS29': [],'IND81SS31': [],
+  'IND81SS32': [],'IND81SS33': [],'IND81SS34': [],'IND81SS39': [],'IND81SS41': [],'IND92SS11': [],
+  'IND92SS21': [],'IND92SS31': [],'IND92SS41': [],'IND92SS51': [],'IND92SS61': [],'IND92SS71': [],
+  'IND92SS81': [],'IND99SS00': [] }
+};
 
 
 // CHECKBOX FOR REQUEST ACCESS SINGLE-INSTANCE
@@ -3916,91 +3566,70 @@ $('input[type="checkbox"]').on('change', function() {
 });
 
 
-// Attach a change event handler to the checkboxes.
-// checkboxes.change(function() {
-//   enabledSettings = checkboxes
-//     .filter(":checked") // Filter out unchecked boxes.
-//     .map(function() { // Extract values using jQuery map.
-//       return this.value;
-//     }) 
-//     .get() // Get array.
-    
-//   console.log(enabledSettings);
-// });
 
-
-// var socket = io('https://d1faqcaxpyxvpg.cloudfront.net');
-// socket.on('connect', function() {
-//   socket.emit('my event', {data: 'I\'m connected!'});
-// });
-//Change to react to layer tree selections 
-//through remote object pipe streaming
-// L.DomEvent.on(L.DomUtil.get('onlysel'), 'click', function() {
-//   lay.collapseTree(true).expandSelected(true);
-// });
-$("#mybutton5").click(function (event) { 
-  if ($("input[name='points']:checked")){
-    // ptsData = socket.emit('my event', {data: $("input[name='points']:checked").val()})
-    ptsData = $("input[name='points']:checked").val()
-    var idVal = $("input[name='points']:checked").attr('id')
-    var d1 = $(`#label[for='${idVal}']`)
+// Function to handle data loading and dynamic layer creation
+$("#mybutton5").click(function () {
+  const checkedInput = $("input[name='points']:checked");
+  if (checkedInput.length) {
+    const dataUrl = checkedInput.val();
+    // loadAndProcessData(dataUrl);
+    loadAndProcessData(dataUrl, checkedInput);
   }
-  //const fipssubGroups = new L.layerGroup();
+});
 
   const subGroups = []; // unique HashCodes
   console.log(subGroups);
  
-  industry = L.geoJson.ajax(ptsData, {
-    pointToLayer: function (feature){
-        return new L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
-        className: feature.properties.HASHcodePM,
-        radius: getRadius(feature.properties.CurrentApprovalAmount),
-        fillOpacity:0.8,
-        color: getColor(feature.properties.Industry),
-        fillColor: getColor(feature.properties.Industry),
-        weight: getRadius(feature.properties.CurrentApprovalAmount)/3,
-    }) //ends circleMarker
-  }, //end pointToLayer
-    onEachFeature: function(feature, layer) {
-      layer.bindPopup("<b>Loan Recipient</b>: " + feature.properties.BorrowerName + "<br><b>Borrower Address</b>: " + feature.properties.full_add + "<br><b>Business Type</b>: " + feature.properties.BusinessType +  "<br><b>Loan Type</b>: " + feature.properties.ProcessingMethod +  "<br><b>Date Approved</b>: " + feature.properties.DateApproved + "<br><b>Current Approval Amount $</b>: " + feature.properties.CurrentApprovalAmount + "<br><b>Jobs Reported #</b>: " + feature.properties.JobsReported + "<br><b>Loan Forgiveness Amount</b>: " + feature.properties.ForgivenessAmount + "<br><b>Loan Status</b>: " + feature.properties.LoanStatus + "<br><b>Loan Status Date</b>: " + feature.properties.LoanStatusDate + "<br><b>Servicing Lender</b>: " + feature.properties.ServicingLenderName + "<br><b>Estimated Lender Profit</b>: " + feature.properties.Estimated_LenderProfit + "<br><b>Industry</b>: "+ feature.properties.Industry + "<br><b>Subsector</b>: "+ feature.properties.IndustrySubsector)
-      var HASHcode = feature.properties["HASHcodePM"];
-      var INDSShash = feature.properties.HASHcodePM.slice(0,9);  
-      var LRhash = feature.properties.HASHcodePM.slice(9,12); 
-      var JRhash = feature.properties.HASHcodePM.slice(12,15); 
-      var BThash = feature.properties.HASHcodePM.slice(15,19); 
-      var BAhash = feature.properties.HASHcodePM.slice(19,22); 
-      var PMhash = feature.properties.HASHcodePM.slice(22,25); 
-      var SThash = feature.properties.FIPSblock.slice(0,2);
 
-      var tagCategories = subGroups[HASHcode];
-      //console.log(tagCategories);
-      if (!tagCategories) {
-        tagCategories = subGroups[HASHcode] = L.geoJson();
-        //tagCategories._leaflet_id = HASHcode; //renames layer 
-      } tagCategories.addLayer(layer); //tagCategories.addTo(mainTag)
-      objpts[SThash].push(tagCategories);
+// function loadAndProcessData(dataUrl) {
+function loadAndProcessData(dataUrl, checkedInput) {
+  const industryLayer = L.geoJson.ajax(dataUrl, {
+    pointToLayer: styleFeature,
+    onEachFeature: processFeature
+  });
 
-      objPM[PMhash].push(tagCategories);
-      
-      objLR[LRhash].push(tagCategories);
+  industryLayer.on("data:loaded", () => {
+    $("#label[for='" + checkedInput.attr('id') + "']").append('<span id="loaded" style="background-color:black; color:white"> loaded</span>');
+  });
+}
 
-      objBA[BAhash].push(tagCategories);
+function styleFeature(feature){
+  return new L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
+    className: feature.properties.HASHcodePM,
+    radius: getRadius(feature.properties.CurrentApprovalAmount),
+    fillOpacity:0.8,
+    color: getColor(feature.properties.Industry),
+    fillColor: getColor(feature.properties.Industry),
+    weight: getRadius(feature.properties.CurrentApprovalAmount)/3,
+}) //ends circleMarker
+};
 
-      objJR[JRhash].push(tagCategories);
+function processFeature(feature, layer) {
+  {
+    layer.bindPopup("<b>Loan Recipient</b>: " + feature.properties.BorrowerName + "<br><b>Borrower Address</b>: " + feature.properties.full_add + "<br><b>Business Type</b>: " + feature.properties.BusinessType +  "<br><b>Loan Type</b>: " + feature.properties.ProcessingMethod +  "<br><b>Date Approved</b>: " + feature.properties.DateApproved + "<br><b>Current Approval Amount $</b>: " + feature.properties.CurrentApprovalAmount + "<br><b>Jobs Reported #</b>: " + feature.properties.JobsReported + "<br><b>Loan Forgiveness Amount</b>: " + feature.properties.ForgivenessAmount + "<br><b>Loan Status</b>: " + feature.properties.LoanStatus + "<br><b>Loan Status Date</b>: " + feature.properties.LoanStatusDate + "<br><b>Servicing Lender</b>: " + feature.properties.ServicingLenderName + "<br><b>Estimated Lender Profit</b>: " + feature.properties.Estimated_LenderProfit + "<br><b>Industry</b>: "+ feature.properties.Industry + "<br><b>Subsector</b>: "+ feature.properties.IndustrySubsector)
+    var HASHcode = feature.properties["HASHcodePM"];
+    var INDSShash = feature.properties.HASHcodePM.slice(0,9);  
+    var LRhash = feature.properties.HASHcodePM.slice(9,12); 
+    var JRhash = feature.properties.HASHcodePM.slice(12,15); 
+    var BThash = feature.properties.HASHcodePM.slice(15,19); 
+    var BAhash = feature.properties.HASHcodePM.slice(19,22); 
+    var PMhash = feature.properties.HASHcodePM.slice(22,25); 
+    var SThash = feature.properties.FIPSblock.slice(0,2);
 
-      objBT[BThash].push(tagCategories);
-
-      objSS[INDSShash].push(tagCategories)
-
-    }, //ends onEachFeature
-  }) //ends ajax request
-  industry.on("data:loaded", function (){
-    d1.append('<span id="loaded" style="background-color:black; color:white"> loaded</span>'); }) 
-    //console.log(subGroups);
-    console.log(objSS['IND00SS00'])
-}); //ends click function 
-
-
+    var tagCategories = subGroups[HASHcode];
+    //console.log(tagCategories);
+    if (!tagCategories) {
+      tagCategories = subGroups[HASHcode] = L.geoJson();
+    } tagCategories.addLayer(layer); //tagCategories.addTo(mainTag)
+    categoryObjects.objpts[SThash].push(tagCategories);
+    categoryObjects.objPM[PMhash].push(tagCategories);
+    categoryObjects.objLR[LRhash].push(tagCategories);
+    categoryObjects.objBA[BAhash].push(tagCategories);
+    categoryObjects.objJR[JRhash].push(tagCategories);
+    categoryObjects.objBT[BThash].push(tagCategories);
+    categoryObjects.objSS[INDSShash].push(tagCategories)
+  } //ends onEachFeature
+}//ends ajax request
 
   function getRadius(r) {
     return  r > 5000000 ? 12 :
@@ -4015,77 +3644,32 @@ $("#mybutton5").click(function (event) {
     return  d > 0 ? '#E4E8E9' :
     0;
     }
-  
-  function getColor(c) {
-    if (c == "Not Available") {
-      return "#86b4a9";
+    function getColor(industry) {
+      const colors = {
+        "Not Available": "#86b4a9",
+        "Nonclassifiable Establishments": "#c8c8a9",
+        "Accommodation and Food Services": "#17becf",
+        "Administrative and Support and Waste Management and Remediation Services": "#dbdb8d",
+        "Agriculture, Forestry, Fishing and Hunting": "#bcbd22",
+        "Arts, Entertainment, and Recreation": "#c7c7c7",
+        "Construction": "#7f7f7f",
+        "Educational Services": "#f7b6d2",
+        "Finance and Insurance": "#e377c2",
+        "Health Care and Social Assistance": "#c49c94",
+        "Information": "#8c564b",
+        "Management of Companies and Enterprises": "#c5b0d5",
+        "Manufacturing": "#9467bd",
+        "Mining, Quarrying, and Oil and Gas Extraction": "#ff9896",
+        "Other Services (except Public Administration)": "#d62728",
+        "Professional, Scientific, and Technical Services": "#98df8a",
+        "Public Administration": "#2ca02c",
+        "Real Estate and Rental and Leasing": "#ffbb78",
+        "Retail Trade": "#ff7f0e",
+        "Transportation and Warehousing": "#aec7e8",
+        "Utilities": "#1f77b4",
+        "Wholesale Trade": "#9edae5"
+      };
+      return colors[industry] || "#defaultColor";
     }
-    else if (c == "Nonclassifiable Establishments") {
-      return "#c8c8a9";
-    }
-    else if (c == "Accommodation and Food Services") {
-      return "#17becf"; 
-    }
-    else if (c == "Administrative and Support and Waste Management and Remediation Services") {
-     return "#dbdb8d";
-    }
-    else if (c == "Agriculture, Forestry, Fishing and Hunting") {
-      return "#bcbd22";
-    }
-    else if (c == "Arts, Entertainment, and Recreation") {
-      return "#c7c7c7";
-    }
-    else if (c == "Construction") {
-      return "#7f7f7f";
-    }
-    else if (c == "Educational Services") {
-      return "#f7b6d2";
-    }
-    else if (c == "Finance and Insurance") {
-      return "#e377c2";
-    }
-    else if (c == "Health Care and Social Assistance") {
-      return "#c49c94";
-    }
-    else if (c == "Information") {
-      return "#8c564b";
-    }
-    else if (c == "Management of Companies and Enterprises") {
-      return "#c5b0d5";
-    }
-    else if (c == "Manufacturing") {
-     return "#9467bd";
-    }
-    else if (c == "Mining, Quarrying, and Oil and Gas Extraction") {
-      return "#ff9896";
-    }
-    else if (c == "Other Services (except Public Administration)") {
-      return "#d62728";
-    }
-    else if (c == "Professional, Scientific, and Technical Services") {
-      return "#98df8a";
-    }
-    else if (c == "Public Administration") {
-      return "#2ca02c";
-    }
-    else if (c == "Real Estate and Rental and Leasing") {
-      return "#ffbb78";
-    }
-    else if (c == "Retail Trade") {
-      return "#ff7f0e";
-    }
-    else if (c == "Transportation and Warehousing") {
-      return "#aec7e8";
-    }
-    else if (c == "Utilities") {
-      return "#1f77b4";
-    }
-    else if (c == "Wholesale Trade") {
-      return "#9edae5";
-    }
-  }
-  
-  
-  
-  
+    
   
