@@ -38,7 +38,6 @@ d3.json(cf, function(data){
       accessToken: API_KEY
     });
     
-  
     var baseMaps = {
               labelIsSelector: 'Base;',
               children: [
@@ -47,10 +46,8 @@ d3.json(cf, function(data){
                   /* ... */
               ]
   };
-  //   const {overlaysTree} = $.getScript("./customTree.js", function() {
-//     alert("Script loaded but not necessarily executed.");
-//  });
-  var overlaysTree = {
+  //OVERLAYSTREE
+let overlaysTree = {
     label: 'Points Selection',
     selectAllCheckbox: 'Un/select all',
     children: [
@@ -605,11 +602,11 @@ d3.json(cf, function(data){
                   collapsed: true,
                   selectAllCheckbox: true,
                   children: [
-                      { label: '<i class="fas fa-circle fa-2xs";></i> a $150,000-350,000', layer: LR1group },
-                      { label: '<i class="fas fa-circle fa-xs";></i> b $350,000-1 million', layer: LR2group},
-                      { label: '<i class="fas fa-circle fa-sm";></i> c $1-2 million', layer: LR3group },
-                      { label: '<i class="fas fa-circle";></i> d $2-5 million', layer: LR4group },
-                      { label: '<i class="fas fa-circle fa-lg";></i> e $5-10 million', layer: LR5group },
+                    { label: '<i class="fas fa-circle fa-2xs";></i> a $150,000-350,000', layer: LR1group },
+                    { label: '<i class="fas fa-circle fa-xs";></i> b $350,000-1 million', layer: LR2group},
+                    { label: '<i class="fas fa-circle fa-sm";></i> c $1-2 million', layer: LR3group },
+                    { label: '<i class="fas fa-circle";></i> d $2-5 million', layer: LR4group },
+                    { label: '<i class="fas fa-circle fa-lg";></i> e $5-10 million', layer: LR5group },
                   ]},
                   {
                     label: '<b>Job Range</b>',
@@ -619,11 +616,11 @@ d3.json(cf, function(data){
                         { label: 'Fewer than 5', layer: JR1group },
                         { label: '5 to 9', layer: JR2group},
                         { label: '10 to 19', layer: JR3group },
-                        { label: '20 to 49', layer: JR4group},
-                        { label: '50 to 99', layer:  JR5group},
+                        { label: '20 to 49', layer: JR4group },
+                        { label: '50 to 99', layer: JR5group},
                         { label: '100 to 249', layer: JR6group},
                         { label: '250 to 499', layer: JR7group},
-                        { label: '500 or more', layer: JR8group},
+                        { label: '500 or more', layer: JR8group },
                     ]},
                  {
                   label: '<b>Business Type</b>',
@@ -678,8 +675,8 @@ d3.json(cf, function(data){
                         { label: 'PPS', layer: PPSgroup},
                     ]},
                   ]}
-        
-  
+
+
       // Create our map, giving it the streetmap layers to display on load
       var myMap = L.map("map", {
         center: [37.4316, -78.6569], //VA [40.6331, -89.3985], //IL [39.0458, -76.6413], //MD
@@ -1971,7 +1968,7 @@ d3.json(cf, function(data){
             categoryObjects.objJR[key].forEach(marker => content.removeLayer(marker));
           }
         })
-        Object.keys(objBA).forEach(key => {
+        Object.keys(categoryObjects.objBA).forEach(key => {
           if (!myMap.hasLayer(eval(`${key}group`))) {
             categoryObjects.objBA[key].forEach(marker => content.removeLayer(marker));
           }
@@ -1984,8 +1981,8 @@ d3.json(cf, function(data){
         }
         })
   
-  
-      // legend add / remove  (County, Block Group, Radius)
+// LEGEND CONTROL PLACEMENT
+     // legend add / remove  (County, Block Group, Radius)
   // legend add / remove  (County, Block Group, Radius)
   myMap.on('overlayadd', function(eventLayer) {
     if (myMap.hasLayer(obj[17]) || myMap.hasLayer(obj[24]) || myMap.hasLayer(obj[51]) || myMap.hasLayer(obj[48])) {
@@ -2052,7 +2049,6 @@ d3.json(cf, function(data){
       this.removeControl(radiuslegend);
     }
   })
-
 // SET VIEW TO POP-UP
   myMap.on('popupopen', function (e) {
     myMap.setView(e.target._popup._latlng);
@@ -2062,7 +2058,7 @@ d3.json(cf, function(data){
   });
 
 
-// ZOOM TO STATE
+// ZOOM TO STATE PLACEMENT
 $('select[name="dropdown"]').change(function(){
   var latlng = $(this).val().split(',');
   var lat = latlng[0];
@@ -2071,8 +2067,7 @@ $('select[name="dropdown"]').change(function(){
   // set the view
   myMap.flyTo([lat, lng], zoom);
 })
-
-// SEARCH
+// SEARCH CONTROL PLACEMENT
 var searchControl = L.esri.Geocoding.geosearch({
   position: 'topright',
   placeholder: 'Enter an address or place e.g. 1 York St',
@@ -2095,118 +2090,101 @@ searchControl.on('results', function (data) {
   }
 });
 
-// POINTS WITHIN 
-  const linkcontent= L.layerGroup().addTo(myMap)
-    $("#checkbox1").change(function () { 
-      if (this.checked){
-      group.addTo(linkcontent)
-      }
-      else {
-        group.remove(linkcontent)
-        }
-    })
-
-  const linkcontentbg = L.layerGroup().addTo(myMap)
-  $("#checkbox2").change(function () { 
-    if (this.checked){
-    groupblock.addTo(linkcontentbg)
+// POINTS WITHIN PLACEMENT
+const linkcontent= L.layerGroup().addTo(myMap)
+$("#checkbox1").change(function () { 
+  if (this.checked){
+  group.addTo(linkcontent)
+  }
+  else {
+    group.remove(linkcontent)
     }
-    else {
-      groupblock.remove(linkcontentbg)
-      }
-  })
-  const linkcontentb = L.layerGroup().addTo(myMap)
-  $("#checkbox3").change(function () { 
-    if (this.checked){
-    block.addTo(linkcontentb)
-    }
-    else {
-      block.remove(linkcontentb)
-      }
-  })
+})
 
-    // myMap.on('overlayadd overlayremove', function() {
-    //   if (myMap.hasLayer(groupblock)) {
-    //     this.addLayer(groupblock)
-    //     this.removeLayer(group)
-    //   } 
-    //   if (myMap.hasLayer(group)) {
-    //     this.addLayer(group)
-    //     this.removeLayer(groupblock)
-    //   } 
-    //   else {
-    //     console.log("no point layer active");
-    //   }
-    //   })
-  //   $('input[type="checkbox"]').on('change', function() {
-  //     $('input[type="checkbox"]').not(this).prop('checked', false);
-  //  });
+const linkcontentbg = L.layerGroup().addTo(myMap)
+$("#checkbox2").change(function () { 
+if (this.checked){
+groupblock.addTo(linkcontentbg)
+}
+else {
+  groupblock.remove(linkcontentbg)
+  }
+})
+const linkcontentb = L.layerGroup().addTo(myMap)
+$("#checkbox3").change(function () { 
+if (this.checked){
+block.addTo(linkcontentb)
+}
+else {
+  block.remove(linkcontentb)
+  }
+})
 
   // REFRESH POINTS WITHIN
-    $("#mybutton4").click(function (event) { 
-      group.clearLayers()
-      groupblock.clearLayers()
-      block.clearLayers()
-    })
-
-
-    // PANEL
-var sidebar = L.control.sidebar({ container: 'sidebar'})
-  .addTo(myMap)
-  .open('info')
-sidebar
-  .addPanel({
-    id:   'mail',
-    tab:  '<i class="fa fa-envelope"></i>',
-    title: 'Messages',
-    button: function() { alert('opened via JS callback') },
-    disabled: true,
-})
-sidebar
-  .addPanel({
-    id:   'points',
-    tab:  '<i class="fa fa-map-pin"></i>',
-    title: 'Points',
-    disabled: true,
+  $("#mybutton4").click(function (event) { 
+    group.clearLayers()
+    groupblock.clearLayers()
+    block.clearLayers()
   })
-sidebar
-  .addPanel({
-    id:   'choro',
-    tab:  '<i class="fa fa-layer-group"></i>',
-    title: 'Choropleth',
-    disabled: true,
-})
-$("#pointen").click(function(){
-  sidebar.enablePanel('points')
-})
-$("#choroen").click(function(){
-  sidebar.enablePanel('choro')
-})
 
-$("#mailen").click(function(){
-  sidebar.enablePanel('mail')
-})
-$("#maildis").click(function(){
-  sidebar.disablePanel('mail')
-})
-var userid = 0
-$("#user").click(function addUser() {
+//SIDEBAR CODE PLACEMENT
+    // PANEL
+  var sidebar = L.control.sidebar({ container: 'sidebar'})
+    .addTo(myMap)
+    .open('info')
   sidebar
     .addPanel({
-      id: 'user' + userid++,
-      tab: '<i class="fa fa-user"></i>',
-      title: 'User Profile ' + userid,
-      pane: '<p>user ipsum dolor sit amet</p>',
-  });
-})
-      
+      id:   'mail',
+      tab:  '<i class="fa fa-envelope"></i>',
+      title: 'Messages',
+      button: function() { alert('opened via JS callback') },
+      disabled: true,
+  })
+  sidebar
+    .addPanel({
+      id:   'points',
+      tab:  '<i class="fa fa-map-pin"></i>',
+      title: 'Points',
+      disabled: true,
+    })
+  sidebar
+    .addPanel({
+      id:   'choro',
+      tab:  '<i class="fa fa-layer-group"></i>',
+      title: 'Choropleth',
+      disabled: true,
+  })
+  $("#pointen").click(function(){
+    sidebar.enablePanel('points')
+  })
+  $("#choroen").click(function(){
+    sidebar.enablePanel('choro')
+  })
+  
+  $("#mailen").click(function(){
+    sidebar.enablePanel('mail')
+  })
+  $("#maildis").click(function(){
+    sidebar.disablePanel('mail')
+  })
+  var userid = 0
+  $("#user").click(function addUser() {
+    sidebar
+      .addPanel({
+        id: 'user' + userid++,
+        tab: '<i class="fa fa-user"></i>',
+        title: 'User Profile ' + userid,
+        pane: '<p>user ipsum dolor sit amet</p>',
+    });
+  })
+
+  //
 var layerControl = L.control.layers.tree (baseMaps, overlaysTree, {
   collapsed: false
 })
 layerControl.addTo(myMap);
 
-
-
+//JSQUERY SELECTOR CODE PLACEMENT
 //LabelSelectors
 itemsArray= {
   'STATE':[],
@@ -2579,7 +2557,8 @@ $(htmlObject).on("change", function(e) {
 })
 //var getsessionStore = JSON.parse(sessionStorage.getItem('myStorage'));
 
-  
+
+//TOTALCHORO CODE PLACEMENT  
   // County Legends
   var legend = L.control({ position: "bottomleft" 
   });
@@ -2650,7 +2629,6 @@ $(htmlObject).on("change", function(e) {
     return div;
   };
   // loanslegend.addTo(myMap);
-  
   
 // Block Group Legends
 var blockgrouplegend = L.control({ position: "bottomleft" 
@@ -2786,22 +2764,21 @@ var loansblocklegend = L.control({ position: "bottomleft"
   return div;
 };
 
-  
   // Radius Legend
-   var radiuslegend = L.control({position: 'bottomright'
-  });
-   radiuslegend.onAdd = function () {
-    var div = L.DomUtil.create('div', 'info legend'),
-        amounts = [150000,350000,1000000, 2000000, 5000000],
-        labels = ['150000','350000','1000000', '2000000', '5000000'];
-    for (var i = 0; i < amounts.length; i++) {
-        div.innerHTML +=
-      '<i class ="circle" style="border-radius: 50%; width:' + getRadius(amounts[i] + 1) +'px; height:' + getRadius(amounts[i] + 1) +'px; background:' + getRadiusColor(amounts[i] + 1) +';"></i> $' +
-        amounts[i] + (amounts[i + 1] ? ' &ndash; $' + amounts[i + 1] + '<br>' : '+');
-          } 
-          return div;
-   };
-   //radiuslegend.addTo(myMap);
+  var radiuslegend = L.control({position: 'bottomright'
+});
+ radiuslegend.onAdd = function () {
+  var div = L.DomUtil.create('div', 'info legend'),
+      amounts = [150000,350000,1000000, 2000000, 5000000],
+      labels = ['150000','350000','1000000', '2000000', '5000000'];
+  for (var i = 0; i < amounts.length; i++) {
+      div.innerHTML +=
+    '<i class ="circle" style="border-radius: 50%; width:' + getRadius(amounts[i] + 1) +'px; height:' + getRadius(amounts[i] + 1) +'px; background:' + getRadiusColor(amounts[i] + 1) +';"></i> $' +
+      amounts[i] + (amounts[i + 1] ? ' &ndash; $' + amounts[i + 1] + '<br>' : '+');
+        } 
+        return div;
+ };
+ //radiuslegend.addTo(myMap);
   }
 
   // Load in geojson state data
@@ -3503,7 +3480,7 @@ const categoryObjects = {
   objLR: { 'LR1': [], 'LR2': [], 'LR3': [], 'LR4': [], 'LR5': [] },
   objBA: { 'BA1': [], 'BA2': [], 'BA3': [], 'BA4': [], 'BA5': [] },
   objJR: { 'JR1': [], 'JR2': [], 'JR3': [], 'JR4': [], 'JR5': [], 'JR6': [], 'JR7': [], 'JR8': [] },
-  objBT: [...Array(27).keys()].reduce((acc, cur) => ({ ...acc, ['BT' + String(cur).padStart(2, '0')]: [] }), {}),
+  objBT: [...Array(26).keys()].reduce((acc, cur) => ({ ...acc, ['BT' + String(cur +1).padStart(2, '0')]: [] }), {}),
   objSS: { 'IND00SS00': [],'IND11SS11': [], 'IND11SS12': [], 'IND11SS13': [],'IND11SS14': [],
   'IND11SS19': [],'IND11SS21': [],'IND11SS22': [],'IND11SS23': [],'IND11SS24': [],'IND11SS25': [],
   'IND11SS29': [],'IND11SS31': [],'IND11SS32': [],'IND11SS33': [],'IND11SS41': [],'IND11SS42': [],
@@ -3566,7 +3543,6 @@ $('input[type="checkbox"]').on('change', function() {
 });
 
 
-
 // Function to handle data loading and dynamic layer creation
 $("#mybutton5").click(function () {
   const checkedInput = $("input[name='points']:checked");
@@ -3577,8 +3553,8 @@ $("#mybutton5").click(function () {
   }
 });
 
-  const subGroups = []; // unique HashCodes
-  console.log(subGroups);
+const subGroups = []; // unique HashCodes
+console.log(subGroups);
  
 
 // function loadAndProcessData(dataUrl) {
@@ -3606,7 +3582,22 @@ function styleFeature(feature){
 
 function processFeature(feature, layer) {
   {
-    layer.bindPopup("<b>Loan Recipient</b>: " + feature.properties.BorrowerName + "<br><b>Borrower Address</b>: " + feature.properties.full_add + "<br><b>Business Type</b>: " + feature.properties.BusinessType +  "<br><b>Loan Type</b>: " + feature.properties.ProcessingMethod +  "<br><b>Date Approved</b>: " + feature.properties.DateApproved + "<br><b>Current Approval Amount $</b>: " + feature.properties.CurrentApprovalAmount + "<br><b>Jobs Reported #</b>: " + feature.properties.JobsReported + "<br><b>Loan Forgiveness Amount</b>: " + feature.properties.ForgivenessAmount + "<br><b>Loan Status</b>: " + feature.properties.LoanStatus + "<br><b>Loan Status Date</b>: " + feature.properties.LoanStatusDate + "<br><b>Servicing Lender</b>: " + feature.properties.ServicingLenderName + "<br><b>Estimated Lender Profit</b>: " + feature.properties.Estimated_LenderProfit + "<br><b>Industry</b>: "+ feature.properties.Industry + "<br><b>Subsector</b>: "+ feature.properties.IndustrySubsector)
+    layer.bindPopup(`
+    <b>Loan Recipient:</b> ${feature.properties.BorrowerName}<br>
+    <b>Borrower Address:</b> ${feature.properties.full_add}<br>
+    <b>Business Type:</b> ${feature.properties.BusinessType}<br>
+    <b>Loan Type:</b> ${feature.properties.ProcessingMethod}<br>
+    <b>Date Approved:</b> ${feature.properties.DateApproved}<br>
+    <b>Current Approval Amount $:</b> ${feature.properties.CurrentApprovalAmount}<br>
+    <b>Jobs Reported #:</b> ${feature.properties.JobsReported}<br>
+    <b>Loan Forgiveness Amount:</b> ${feature.properties.ForgivenessAmount}<br>
+    <b>Loan Status:</b> ${feature.properties.LoanStatus}<br>
+    <b>Loan Status Date:</b> ${feature.properties.LoanStatusDate}<br>
+    <b>Servicing Lender:</b> ${feature.properties.ServicingLenderName}<br>
+    <b>Estimated Lender Profit:</b> ${feature.properties.Estimated_LenderProfit}<br>
+    <b>Industry:</b> ${feature.properties.Industry}<br>
+    <b>Subsector:</b> ${feature.properties.IndustrySubsector}
+  `);
     var HASHcode = feature.properties["HASHcodePM"];
     var INDSShash = feature.properties.HASHcodePM.slice(0,9);  
     var LRhash = feature.properties.HASHcodePM.slice(9,12); 
@@ -3673,3 +3664,4 @@ function processFeature(feature, layer) {
     }
     
   
+
