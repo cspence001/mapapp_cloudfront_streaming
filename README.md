@@ -11,6 +11,7 @@ GIS proof-of-concept app
 <br>
 <br>currently: working on session state storage to optimize client-side data cacheing and delivery in tandem with integration of logging system
 <br>
+<br>
 ---
 virtual environment within project directory<br>
 ```
