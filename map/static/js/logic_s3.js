@@ -1,4 +1,4 @@
-cf = "STATES_PTS_51"
+cf = "STATES_PTS_51" //state test initial load (51=VA)
 //cf = "../../../../data/state_data/geo/state_agg/51/23/51pt.json"
 d3.json(cf, function(data){
     createFeatures(data.features);
